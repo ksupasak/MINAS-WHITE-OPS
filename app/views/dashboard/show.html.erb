@@ -1,0 +1,96 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber">Dashboard</h1>
+  <%= link_to "Graph View", graph_path, class: "btn-cyber btn-primary-cyber" %>
+</div>
+
+<!-- Stats Cards -->
+<div class="row mb-4">
+  <div class="col-md-4">
+    <div class="glass-card">
+      <div class="card-body-cyber">
+        <div class="stat-label">Posts Today</div>
+        <div class="stat-value"><%= @posts_today %></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="glass-card">
+      <div class="card-body-cyber">
+        <div class="stat-label">Active Subjects</div>
+        <div class="stat-value"><%= @active_subjects %></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="glass-card">
+      <div class="card-body-cyber">
+        <div class="stat-label">Feeders</div>
+        <div class="stat-value"><%= @feeders.count %></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!-- Recent Results -->
+  <div class="col-lg-6">
+    <div class="glass-card mb-4">
+      <div class="card-header-cyber">
+        <span class="header-icon">◧</span>
+        <h3>Recent Results</h3>
+      </div>
+      <div class="card-body-cyber p-0">
+        <table class="table-cyber">
+          <thead>
+            <tr>
+              <th>Feeder</th>
+              <th>Status</th>
+              <th>Posts</th>
+              <th>Finished</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @latest_results.each do |res| %>
+              <tr>
+                <td><%= res.feeder.name %></td>
+                <td><span class="status-badge <%= res.status %>"><%= res.status %></span></td>
+                <td><%= res.posts_count %></td>
+                <td><%= res.finished_at&.strftime("%Y-%m-%d %H:%M") %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feeders -->
+  <div class="col-lg-6">
+    <div class="glass-card mb-4">
+      <div class="card-header-cyber">
+        <span class="header-icon">◈</span>
+        <h3>Feeders</h3>
+      </div>
+      <div class="card-body-cyber p-0">
+        <table class="table-cyber">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @feeders.each do |feeder| %>
+              <tr>
+                <td><%= link_to feeder.name, feeder %></td>
+                <td><%= feeder.feeder_type.name %></td>
+                <td><span class="status-badge <%= feeder.status %>"><%= feeder.status %></span></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber">Edit Model</h1>
+  <div class="d-flex gap-2">
+    <%= link_to "View", @model, class: "btn-cyber btn-secondary-cyber" %>
+    <%= link_to "← Back", models_path, class: "btn-cyber btn-secondary-cyber" %>
+  </div>
+</div>
+
+<%= render "form", model: @model %>

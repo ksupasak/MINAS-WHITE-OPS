@@ -1,0 +1,7 @@
+<h1>Test#neo4j</h1>
+<p>Find me in app/views/test/neo4j.html.erb</p>
+<%
+
+      batch_id = Graph::UpsertBatch.new(customer: feeder.customer, feeder: feeder, subject_ids: subjects.map(&:id), items: items).call
+
+%>

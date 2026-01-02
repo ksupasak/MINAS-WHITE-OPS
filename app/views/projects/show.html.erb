@@ -1,0 +1,32 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3"><%= @project.name %></h1>
+  <div class="d-flex gap-2">
+    <%= button_to "Analyse All Post Sentiment", analyze_all_sentiment_project_path(@project), method: :post, class: "btn btn-success", data: { confirm: "This will queue all posts in this project for sentiment analysis. Continue?" } %>
+    <%= link_to "Add Subject", new_project_subject_path(@project), class: "btn btn-primary" %>
+    <%= link_to "Edit", edit_project_path(@project), class: "btn btn-outline-primary" %>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <p><strong>Status:</strong> <%= @project.status %></p>
+    <p><strong>Customer:</strong> <%= @project.customer&.name %></p>
+    <p><strong>Description:</strong><br><%= @project.description %></p>
+  </div>
+</div>
+
+<h5>Subjects</h5>
+<table class="table table-sm">
+  <thead>
+    <tr><th>Name</th><th>Query</th><th>Active</th></tr>
+  </thead>
+  <tbody>
+    <% @project.subjects.each do |subject| %>
+      <tr>
+        <td><%= link_to subject.name, subject %></td>
+        <td><%= subject.query %></td>
+        <td><%= subject.active? ? "Yes" : "No" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

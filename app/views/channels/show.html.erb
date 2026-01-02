@@ -1,0 +1,24 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber"><%= @channel.name %></h1>
+  <div class="d-flex gap-2">
+    <%= link_to "Edit", edit_channel_path(@channel), class: "btn-cyber btn-secondary-cyber" %>
+    <%= button_to "Delete", channel_path(@channel), method: :delete, data: { confirm: "Delete this channel?" }, class: "btn-cyber btn-danger-cyber" %>
+  </div>
+</div>
+
+<div class="glass-card">
+  <div class="card-body-cyber">
+    <div class="info-row">
+      <span class="info-label">Name</span>
+      <span class="info-value"><%= @channel.name %></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Created</span>
+      <span class="info-value"><%= @channel.created_at&.strftime("%Y-%m-%d %H:%M") %></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Updated</span>
+      <span class="info-value"><%= @channel.updated_at&.strftime("%Y-%m-%d %H:%M") %></span>
+    </div>
+  </div>
+</div>

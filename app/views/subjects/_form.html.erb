@@ -1,0 +1,48 @@
+<%= form_with(model: @project ? [@project, subject] : subject, class: "card shadow-sm") do |form| %>
+  <div class="card-body">
+    <% if subject.errors.any? %>
+      <div class="alert alert-danger"><%= subject.errors.full_messages.to_sentence %></div>
+    <% end %>
+
+    <% if @project %>
+      <div class="mb-3">
+        <label class="form-label">Project</label>
+        <p class="form-control-plaintext fw-bold"><%= @project.name %></p>
+      </div>
+    <% else %>
+      <div class="mb-3">
+        <%= form.label :project_id, "Project", class: "form-label" %>
+        <%= form.collection_select :project_id, policy_scope(Project), :id, :name, {}, class: "form-select" %>
+      </div>
+    <% end %>
+
+    <div class="mb-3">
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :query, class: "form-label" %>
+      <%= form.text_field :query, class: "form-control" %>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <%= form.label :language, class: "form-label" %>
+        <%= form.text_field :language, class: "form-control" %>
+      </div>
+      <div class="col-md-6 mb-3">
+        <%= form.label :country, class: "form-label" %>
+        <%= form.text_field :country, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-check form-switch mb-3">
+      <%= form.check_box :active, class: "form-check-input" %>
+      <%= form.label :active, "Active", class: "form-check-label" %>
+    </div>
+  </div>
+  <div class="card-footer text-end">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

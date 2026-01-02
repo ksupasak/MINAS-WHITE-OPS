@@ -1,0 +1,7 @@
+# Define cron jobs for feeder runs. Replace sample with real feeder IDs.
+# demo_feeder:
+#   cron: "*/30 * * * *"
+#   class: "RunFeederJob"
+#   args:
+#     - "<feeder_id>"
+{}

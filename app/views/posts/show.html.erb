@@ -1,0 +1,111 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber">Post Details</h1>
+  <div class="d-flex gap-2">
+    <%= button_to "Index Post", index_post_post_path(@post), method: :post, class: "btn-cyber btn-primary-cyber" %>
+    <%= button_to "Analyze Sentiment", analyze_sentiment_post_path(@post), method: :post, class: "btn-cyber btn-primary-cyber" %>
+    <%= link_to "Edit", edit_post_path(@post), class: "btn-cyber btn-secondary-cyber" %>
+    <%= button_to "Delete", post_path(@post), method: :delete, data: { confirm: "Delete this post?" }, class: "btn-cyber btn-danger-cyber" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+
+    <div class="glass-card mb-4">
+      <div class="card-header-cyber">
+        <span class="header-icon">◧</span>
+        <h3>Content</h3>
+      </div>
+      <div class="card-body-cyber">
+        <% if @post.title.present? %>
+          <h4 class="mb-3"><%= @post.title %></h4>
+        <% end %>
+        <p class="post-text"><%= @post.text %></p>
+        <% if @post.snippet.present? %>
+          <p class="text-muted"><%= @post.snippet %></p>
+        <% end %>
+        <% if @post.link.present? %>
+          <p><%= link_to @post.link, @post.link, target: "_blank", class: "text-primary" %></p>
+        <% end %>
+        <% if @post.hashtags.present? %>
+          <div class="mt-3">
+            <% @post.hashtags.each do |tag| %>
+              <span class="status-badge">#<%= tag %></span>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      
+    </div>
+
+    <div class="glass-card mb-4">
+      <div class="card-header-cyber">
+        <span class="header-icon">◧</span>
+        <h3>Sentiment</h3>
+      </div>
+      <div class="card-body-cyber">
+
+      <% PostSubject.where(post_id: @post.id).each do |ps| %>
+        <div class="post-subject-card">
+          <div class="post-subject-header">
+          <%
+          subject = Subject.find(ps.subject_id)
+          if subject
+            subject_name = subject.name
+          else
+            subject_name = "Unknown"
+          end
+          %>
+          <span class="subject-name"><%= subject_name %></span>
+            <span class="sentiment-badge <%= ps.sentiment_color %>">
+              <span class="sentiment-icon"><%= ps.sentiment_icon %></span>
+              <%= ps.sentiment&.capitalize || "Unknown" %>
+            </span>
+            <span class="confidence-pill"><%= (ps.confidence * 100).round(1) %>%</span>
+          </div>
+        </div>
+       <% end %>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="glass-card">
+      <div class="card-header-cyber">
+        <span class="header-icon">◈</span>
+        <h3>Metadata</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="info-row">
+          <span class="info-label">Post ID</span>
+          <span class="info-value"><%= @post.post_id %></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Channel</span>
+          <span class="info-value"><span class="status-badge"><%= @post.channel %></span></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Source</span>
+          <span class="info-value"><%= @post.source %></span>
+        </div>
+        <% if @post.ref_type.present? %>
+          <div class="info-row">
+            <span class="info-label">Ref Type</span>
+            <span class="info-value"><%= @post.ref_type %></span>
+          </div>
+        <% end %>
+        <% if @post.date_text.present? %>
+          <div class="info-row">
+            <span class="info-label">Date</span>
+            <span class="info-value"><%= @post.date_text %></span>
+          </div>
+        <% end %>
+        <div class="info-row">
+          <span class="info-label">Created</span>
+          <span class="info-value"><%= @post.created_at&.strftime("%Y-%m-%d %H:%M") %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

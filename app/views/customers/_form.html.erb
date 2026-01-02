@@ -1,0 +1,32 @@
+<%= form_with(model: customer, class: "card shadow-sm") do |form| %>
+  <div class="card-body">
+    <% if customer.errors.any? %>
+      <div class="alert alert-danger">
+        <%= customer.errors.full_messages.to_sentence %>
+      </div>
+    <% end %>
+
+    <div class="mb-3">
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :slug, class: "form-label" %>
+      <%= form.text_field :slug, class: "form-control" %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :plan, class: "form-label" %>
+      <%= form.text_field :plan, class: "form-control" %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :status, class: "form-label" %>
+      <%= form.select :status, %w[active suspended trial], {}, class: "form-select" %>
+    </div>
+  </div>
+  <div class="card-footer text-end">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

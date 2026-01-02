@@ -1,0 +1,167 @@
+<%= form_with(model: post_subject, class: "glass-card") do |form| %>
+  <div class="card-body-cyber">
+    <% if post_subject.errors.any? %>
+      <div class="alert-cyber alert-danger-cyber mb-4">
+        <span class="alert-icon">⚠</span>
+        <span class="alert-text"><%= post_subject.errors.full_messages.to_sentence %></span>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :post_id, "Post ID", class: "form-label-cyber" %>
+          <%= form.text_field :post_id, class: "form-input-cyber", placeholder: "BSON ObjectId" %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :subject_id, "Subject ID", class: "form-label-cyber" %>
+          <%= form.text_field :subject_id, class: "form-input-cyber", placeholder: "BSON ObjectId" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :sentiment, class: "form-label-cyber" %>
+          <div class="sentiment-select">
+            <% PostSubject::SENTIMENTS.each do |sent| %>
+              <label class="sentiment-option" data-sentiment="<%= sent %>">
+                <%= form.radio_button :sentiment, sent, id: "sentiment_#{sent}" %>
+                <span class="sentiment-box <%= sent %>">
+                  <span class="sent-icon">
+                    <% case sent %>
+                    <% when "positive" %>▲
+                    <% when "negative" %>▼
+                    <% when "neutral" %>◆
+                    <% when "mixed" %>◇
+                    <% end %>
+                  </span>
+                  <span class="sent-label"><%= sent.capitalize %></span>
+                </span>
+              </label>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :confidence, class: "form-label-cyber" %>
+          <%= form.number_field :confidence, class: "form-input-cyber", min: 0, max: 1, step: 0.01, placeholder: "0.0 - 1.0" %>
+          <div class="form-hint-cyber">Value between 0 and 1</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :model_id, "Model", class: "form-label-cyber" %>
+          <%= form.text_field :model_id, class: "form-input-cyber", placeholder: "e.g. gpt-4, claude-3" %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :analyzed_at, "Analyzed At", class: "form-label-cyber" %>
+          <%= form.datetime_local_field :analyzed_at, class: "form-input-cyber" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group-cyber">
+      <%= form.label :note, class: "form-label-cyber" %>
+      <%= form.text_area :note, class: "form-input-cyber", rows: 4, placeholder: "Additional notes about this analysis..." %>
+    </div>
+  </div>
+
+  <div class="card-footer-cyber">
+    <%= link_to "Cancel", post_subjects_path, class: "btn-cyber btn-secondary-cyber" %>
+    <%= form.submit class: "btn-cyber btn-primary-cyber" %>
+  </div>
+<% end %>
+
+<style>
+.sentiment-select {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.sentiment-option {
+  cursor: pointer;
+}
+
+.sentiment-option input {
+  display: none;
+}
+
+.sentiment-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--cyber-border);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.sentiment-option:hover .sentiment-box {
+  border-color: var(--cyber-primary);
+}
+
+.sentiment-option input:checked + .sentiment-box {
+  box-shadow: 0 0 20px var(--cyber-primary-glow);
+}
+
+.sentiment-option input:checked + .sentiment-box.positive {
+  border-color: #00ff88;
+  background: rgba(0, 255, 136, 0.15);
+}
+
+.sentiment-option input:checked + .sentiment-box.negative {
+  border-color: #ff4466;
+  background: rgba(255, 68, 102, 0.15);
+}
+
+.sentiment-option input:checked + .sentiment-box.neutral {
+  border-color: #88aaff;
+  background: rgba(136, 170, 255, 0.15);
+}
+
+.sentiment-option input:checked + .sentiment-box.mixed {
+  border-color: #ffc800;
+  background: rgba(255, 200, 0, 0.15);
+}
+
+.sent-icon {
+  font-size: 24px;
+  color: var(--cyber-text-secondary);
+}
+
+.sentiment-option input:checked + .sentiment-box.positive .sent-icon { color: #00ff88; }
+.sentiment-option input:checked + .sentiment-box.negative .sent-icon { color: #ff4466; }
+.sentiment-option input:checked + .sentiment-box.neutral .sent-icon { color: #88aaff; }
+.sentiment-option input:checked + .sentiment-box.mixed .sent-icon { color: #ffc800; }
+
+.sent-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--cyber-text-secondary);
+}
+
+.sentiment-option input:checked + .sentiment-box .sent-label {
+  color: var(--cyber-text-primary);
+}
+
+@media (max-width: 768px) {
+  .sentiment-select {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>

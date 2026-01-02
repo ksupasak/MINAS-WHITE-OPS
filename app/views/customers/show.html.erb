@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3"><%= @customer.name %></h1>
+  <%= link_to "Edit", edit_customer_path(@customer), class: "btn btn-outline-primary" %>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <p><strong>Plan:</strong> <%= @customer.plan %></p>
+    <p><strong>Status:</strong> <%= @customer.status %></p>
+    <p><strong>Slug:</strong> <%= @customer.slug %></p>
+  </div>
+</div>

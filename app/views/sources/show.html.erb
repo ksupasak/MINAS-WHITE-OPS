@@ -1,0 +1,32 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber"><%= @source.name %></h1>
+  <div class="d-flex gap-2">
+    <%= link_to "Edit", edit_source_path(@source), class: "btn-cyber btn-secondary-cyber" %>
+    <%= button_to "Delete", source_path(@source), method: :delete, data: { confirm: "Delete this source?" }, class: "btn-cyber btn-danger-cyber" %>
+  </div>
+</div>
+
+<div class="glass-card">
+  <div class="card-body-cyber">
+    <div class="info-row">
+      <span class="info-label">Name</span>
+      <span class="info-value"><%= @source.name %></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Source ID</span>
+      <span class="info-value"><%= @source.source_id %></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Channel</span>
+      <span class="info-value"><%= @source.channel %></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Channel ID</span>
+      <span class="info-value"><%= @source.channel_id %></span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Created</span>
+      <span class="info-value"><%= @source.created_at&.strftime("%Y-%m-%d %H:%M") %></span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<h1 class="h3 mb-3">Graph View</h1>
+
+<%= form_with url: graph_path, method: :get, local: true, class: "row g-3 mb-3" do |form| %>
+  <div class="col-md-4">
+    <%= form.label :subject_id, "Subject", class: "form-label" %>
+    <%= form.select :subject_id, @subjects.map { |s| [s.name, s.id] }, { selected: @selected_subject_id }, class: "form-select" %>
+  </div>
+  <div class="col-md-3">
+    <%= form.label :from, "From", class: "form-label" %>
+    <%= form.date_field :from, value: @from, class: "form-control" %>
+  </div>
+  <div class="col-md-3">
+    <%= form.label :to, "To", class: "form-label" %>
+    <%= form.date_field :to, value: @to, class: "form-control" %>
+  </div>
+  <div class="col-md-2 align-self-end">
+    <%= form.submit "Load", class: "btn btn-primary w-100" %>
+  </div>
+<% end %>
+
+<% if @selected_subject_id.blank? %>
+  <div class="alert alert-warning">Create a subject to visualize graph data.</div>
+<% end %>
+
+<div id="graph-container" data-controller="graph" data-graph-data-url-value="<%= api_v1_graph_path(subject_id: @selected_subject_id, from: @from, to: @to) %>"></div>
+
+<%= button_to "Reprocess", reprocess_graph_path, method: :post, class: "btn btn-danger" %>

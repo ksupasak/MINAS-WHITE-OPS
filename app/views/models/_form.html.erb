@@ -1,0 +1,287 @@
+<%= form_with(model: model, class: "glass-card") do |form| %>
+  <div class="card-body-cyber">
+    <% if model.errors.any? %>
+      <div class="alert-cyber alert-danger-cyber mb-4">
+        <span class="alert-icon">⚠</span>
+        <span class="alert-text"><%= model.errors.full_messages.to_sentence %></span>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :name, class: "form-label-cyber" %>
+          <%= form.text_field :name, class: "form-input-cyber", placeholder: "e.g. GPT-4 Turbo" %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :provider, class: "form-label-cyber" %>
+          <div class="provider-select">
+            <% Model::PROVIDERS.each do |provider| %>
+              <label class="provider-option">
+                <%= form.radio_button :provider, provider, id: "provider_#{provider}" %>
+                <span class="provider-box">
+                  <span class="prov-icon">
+                    <% case provider %>
+                    <% when "ollama" %>🦙
+                    <% when "openai" %>🤖
+                    <% when "anthropic" %>🧠
+                    <% when "huggingface" %>🤗
+                    <% else %>◈
+                    <% end %>
+                  </span>
+                  <span class="prov-name"><%= provider.capitalize %></span>
+                </span>
+              </label>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :model_id, "Model ID", class: "form-label-cyber" %>
+          <%= form.text_field :model_id, class: "form-input-cyber", placeholder: "e.g. gpt-4-turbo, qwen2.5:7b" %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :version, class: "form-label-cyber" %>
+          <%= form.text_field :version, class: "form-input-cyber", placeholder: "e.g. 1.0.0" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="form-group-cyber">
+          <%= form.label :host, class: "form-label-cyber" %>
+          <%= form.text_field :host, class: "form-input-cyber", placeholder: "e.g. http://ollama:11434" %>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group-cyber">
+          <%= form.label :token, "API Token", class: "form-label-cyber" %>
+          <%= form.password_field :token, class: "form-input-cyber", placeholder: "sk-..." %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group-cyber">
+      <%= form.label :description, class: "form-label-cyber" %>
+      <%= form.text_area :description, class: "form-input-cyber", rows: 3, placeholder: "Description of this model..." %>
+    </div>
+
+    <div class="form-group-cyber">
+      <label class="form-label-cyber">Capabilities</label>
+      <div class="capabilities-select">
+        <% Model::CAPABILITIES.each do |cap| %>
+          <label class="capability-option">
+            <%= form.check_box :capabilities, { multiple: true, checked: model.capabilities.include?(cap) }, cap, nil %>
+            <span class="capability-box">
+              <span class="cap-icon">
+                <% case cap %>
+                <% when "chat" %>💬
+                <% when "embedding" %>📊
+                <% when "sentiment" %>❤️
+                <% when "summarization" %>📝
+                <% when "translation" %>🌐
+                <% end %>
+              </span>
+              <span class="cap-name"><%= cap.capitalize %></span>
+              <span class="cap-check">✓</span>
+            </span>
+          </label>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="form-group-cyber">
+      <label class="toggle-cyber">
+        <%= form.check_box :active, class: "toggle-input" %>
+        <span class="toggle-slider"></span>
+        <span class="toggle-label">Active</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="card-footer-cyber">
+    <%= link_to "Cancel", models_path, class: "btn-cyber btn-secondary-cyber" %>
+    <%= form.submit class: "btn-cyber btn-primary-cyber" %>
+  </div>
+<% end %>
+
+<style>
+.provider-select {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.provider-option {
+  cursor: pointer;
+}
+
+.provider-option input {
+  display: none;
+}
+
+.provider-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--cyber-border);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.provider-option:hover .provider-box {
+  border-color: var(--cyber-primary);
+}
+
+.provider-option input:checked + .provider-box {
+  border-color: var(--cyber-primary);
+  background: rgba(0, 240, 255, 0.15);
+  box-shadow: 0 0 15px var(--cyber-primary-glow);
+}
+
+.prov-icon {
+  font-size: 24px;
+}
+
+.prov-name {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--cyber-text-secondary);
+}
+
+.capabilities-select {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.capability-option {
+  cursor: pointer;
+}
+
+.capability-option input {
+  display: none;
+}
+
+.capability-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--cyber-border);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.capability-option:hover .capability-box {
+  border-color: var(--cyber-primary);
+}
+
+.capability-option input:checked + .capability-box {
+  border-color: var(--cyber-primary);
+  background: rgba(0, 240, 255, 0.15);
+}
+
+.cap-icon {
+  font-size: 24px;
+}
+
+.cap-name {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--cyber-text-secondary);
+}
+
+.cap-check {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cyber-primary);
+  border-radius: 50%;
+  font-size: 10px;
+  color: var(--cyber-bg-deep);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.capability-option input:checked + .capability-box .cap-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.toggle-cyber {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-slider {
+  width: 50px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 13px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--cyber-text-muted);
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: all 0.3s ease;
+}
+
+.toggle-input:checked + .toggle-slider {
+  background: rgba(0, 240, 255, 0.3);
+}
+
+.toggle-input:checked + .toggle-slider::before {
+  background: var(--cyber-primary);
+  left: 27px;
+  box-shadow: 0 0 10px var(--cyber-primary-glow);
+}
+
+.toggle-label {
+  font-size: 14px;
+  color: var(--cyber-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .provider-select, .capabilities-select {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>

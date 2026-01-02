@@ -1,0 +1,36 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber">Sources</h1>
+  <div class="d-flex gap-2">
+    <%= button_to "Reset All", destroy_all_sources_path, method: :delete, data: { confirm: "Delete all sources?" }, class: "btn-cyber btn-danger-cyber" %>
+    <%= link_to "New Source", new_source_path, class: "btn-cyber btn-primary-cyber" %>
+  </div>
+</div>
+
+<div class="glass-card">
+  <div class="card-body-cyber p-0">
+    <table class="table-cyber">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Source ID</th>
+          <th>Channel</th>
+          <th>Created</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @sources.each do |source| %>
+          <tr>
+            <td><%= link_to source.name, source %></td>
+            <td><%= source.source_id %></td>
+            <td><%= source.channel %></td>
+            <td><%= source.created_at&.strftime("%Y-%m-%d %H:%M") %></td>
+            <td class="text-end">
+              <%= link_to "Edit", edit_source_path(source), class: "btn-cyber btn-secondary-cyber btn-sm" %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

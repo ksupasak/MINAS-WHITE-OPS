@@ -1,0 +1,197 @@
+{
+    "search_metadata": {
+      "id": "694fffaffbbeb545a9a3730d",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/d82e638f7ac11dcc/694fffaffbbeb545a9a3730d.json",
+      "pixel_position_endpoint": "https://serpapi.com/searches/d82e638f7ac11dcc/694fffaffbbeb545a9a3730d.json_with_pixel_position",
+      "created_at": "2025-12-27 15:47:59 UTC",
+      "processed_at": "2025-12-27 15:47:59 UTC",
+      "google_url": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&oq=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&hl=en&gl=us&start=10&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/d82e638f7ac11dcc/694fffaffbbeb545a9a3730d.html",
+      "total_time_taken": 1.85
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "สงครามไทยกัมพูชา",
+      "google_domain": "google.com",
+      "hl": "en",
+      "gl": "us",
+      "start": 10,
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "สงครามไทยกัมพูชา",
+      "total_results": 9020000,
+      "page_number": 2,
+      "time_taken_displayed": 0.49,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "ข้อพิพาท ไทย-กัมพูชา กับไฟสงครามที่พร้อมปะทุ | ข่าวใหญ่แห่งปี ...",
+        "link": "https://www.youtube.com/watch?v=ns9XPDEggR8",
+        "displayed_link": "13.8K+ views · 1 day ago",
+        "thumbnail": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf2303c8db0973afa691c870d90cec269bc.jpeg",
+        "favicon": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf283ba9d678743337ea103249ab34cb870.png",
+        "snippet": "สถานการณ์ชายแดนไทย - กัมพูชา ยังคงไร้ทางออก การปะทะตามแนวชายแดนรอบแรก เมื่อเดือนกรกฎาคม แม้จะลงนามหยุดยิงกันแล้ว ผ่านไป 5 เดือน การปะทะรอบ 2 ...",
+        "duration": "6:31",
+        "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcSEwmvE16czROB2xlRghQY5OER2hLfC0l57Mw",
+        "source": "YouTube · ข่าวช่องวัน"
+      },
+      {
+        "position": 2,
+        "title": "สื่อนานาชาติรายงานเหตุการณ์ชายแดนไทย-กัมพูชา",
+        "link": "https://thaipublica.org/2025/07/thailand-cambodia-tension-view-of-international-medias/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thaipublica.org/2025/07/thailand-cambodia-tension-view-of-international-medias/&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChAWegQIGRAB",
+        "displayed_link": "https://thaipublica.org › 2025/07 › t...",
+        "favicon": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf2cee242dff868a1b47572de8311070147.png",
+        "date": "Jul 24, 2025",
+        "snippet": "เหตุการณ์เริ่มต้นขึ้นในช่วงเช้าตรู่ โดยกองทัพไทยระบุว่า กองกำลังกัมพูชาได้ยิงใส่ฐานทัพของไทยในพื้นที่ใกล้กับปราสาทโบราณตาเมือนธม ซึ่งตั้งอยู่ในพื้นที่พิพาททางตอนใต้ของจังหวัดสุรินทร์ และทาง ...",
+        "snippet_highlighted_words": [
+          "ไทย",
+          "กัมพูชา",
+          "ไทย"
+        ],
+        "source": "ThaiPublica"
+      },
+      {
+        "position": 3,
+        "title": "ส่องสถานการณ์ร้อนชายแดนไทย-กัมพูชา EP.5 ถอดรหัสศึกไทย ...",
+        "link": "https://spacebar.th/deep-space/deep-space-catch-the-suspicious-person-who-started-the-war",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://spacebar.th/deep-space/deep-space-catch-the-suspicious-person-who-started-the-war&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChAWegQIFhAB",
+        "displayed_link": "https://spacebar.th › deep-space › d...",
+        "favicon": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf25cfeebeadabaad6cdb6e0ab1e94b99c7.png",
+        "date": "Nov 23, 2025",
+        "snippet": "ส่องสถานการณ์ร้อนชายแดนไทย-กัมพูชา EP.5 ถอดรหัสศึกไทย-กัมพูชารอบใหม่ จับพิรุธ 'ทรัมป์-อันวาร์-ฮุนมาเนต' เจาะเบื้องหลังใครตั้งใจ “จุดไฟสงคราม”",
+        "snippet_highlighted_words": [
+          "ไทย",
+          "กัมพูชา",
+          "ไทย",
+          "กัมพูชา",
+          "สงคราม"
+        ],
+        "source": "spacebar.th"
+      },
+      {
+        "position": 4,
+        "title": "บันทึกเหตุการณ์การปะทะบริเวณชายแดนไทย–กัมพูชา วันที่ 24 ...",
+        "link": "https://www.facebook.com/rtarfhq.pr/posts/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%B0%E0%B8%97%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%8A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%94%E0%B8%99%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88-24-%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8E%E0%B8%B2%E0%B8%84%E0%B8%A1-2568-english-below/1157394913086902/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/rtarfhq.pr/posts/%25E0%25B8%259A%25E0%25B8%25B1%25E0%25B8%2599%25E0%25B8%2597%25E0%25B8%25B6%25E0%25B8%2581%25E0%25B9%2580%25E0%25B8%25AB%25E0%25B8%2595%25E0%25B8%25B8%25E0%25B8%2581%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B8%2593%25E0%25B9%258C%25E0%25B8%2581%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B8%259B%25E0%25B8%25B0%25E0%25B8%2597%25E0%25B8%25B0%25E0%25B8%259A%25E0%25B8%25A3%25E0%25B8%25B4%25E0%25B9%2580%25E0%25B8%25A7%25E0%25B8%2593%25E0%25B8%258A%25E0%25B8%25B2%25E0%25B8%25A2%25E0%25B9%2581%25E0%25B8%2594%25E0%25B8%2599%25E0%25B9%2584%25E0%25B8%2597%25E0%25B8%25A2%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%25A1%25E0%25B8%259E%25E0%25B8%25B9%25E0%25B8%258A%25E0%25B8%25B2%25E0%25B8%25A7%25E0%25B8%25B1%25E0%25B8%2599%25E0%25B8%2597%25E0%25B8%25B5%25E0%25B9%2588-24-%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%2581%25E0%25B8%258E%25E0%25B8%25B2%25E0%25B8%2584%25E0%25B8%25A1-2568-english-below/1157394913086902/&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChAWegQIIxAB",
+        "displayed_link": "8.1K+ reactions · 5 months ago",
+        "favicon": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf228ec1b77aff3f9d26ce01bb3e9b1683a.png",
+        "snippet": "บันทึกเหตุการณ์การปะทะบริเวณชายแดนไทย–กัมพูชา วันที่ 24 กรกฎาคม 2568 [English Below] ตามรายงานสรุปเหตุการณ์การปะทะบริเวณชายแดน จากกรมกิจการชายแดนทหาร...",
+        "snippet_highlighted_words": [
+          "บันทึกเหตุการณ์การปะทะบริเวณชายแดนไทย–กัมพูชา วันที่ 24 กรกฎาคม 2568"
+        ],
+        "source": "Facebook · กองบัญชาการกองทัพไทย Royal Thai Armed Forces Headquarters"
+      },
+      {
+        "position": 5,
+        "title": "วิกฤตการณ์ชายแดนไทย–กัมพูชา พ.ศ. 2568",
+        "link": "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B4%E0%B8%81%E0%B8%A4%E0%B8%95%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%8A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%94%E0%B8%99%E0%B9%84%E0%B8%97%E0%B8%A2%E2%80%93%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2_%E0%B8%9E.%E0%B8%A8._2568",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://th.wikipedia.org/wiki/%25E0%25B8%25A7%25E0%25B8%25B4%25E0%25B8%2581%25E0%25B8%25A4%25E0%25B8%2595%25E0%25B8%2581%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B8%2593%25E0%25B9%258C%25E0%25B8%258A%25E0%25B8%25B2%25E0%25B8%25A2%25E0%25B9%2581%25E0%25B8%2594%25E0%25B8%2599%25E0%25B9%2584%25E0%25B8%2597%25E0%25B8%25A2%25E2%2580%2593%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%25A1%25E0%25B8%259E%25E0%25B8%25B9%25E0%25B8%258A%25E0%25B8%25B2_%25E0%25B8%259E.%25E0%25B8%25A8._2568&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChAWegQIGhAB",
+        "displayed_link": "https://th.wikipedia.org › wiki › ว...",
+        "favicon": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf2e19ebf65b25f0a9e9685a47922da40df.png",
+        "snippet": "สืบเนื่องจากกรณีพิพาทเรื่องอาณาเขตระหว่างประเทศไทยและประเทศกัมพูชา ใน พ.ศ. 2568 ความตึงเครียดเพิ่มขึ้นในพื้นที่พิพาทหลายแห่งตามแนวชายแดนไทย–กัมพูชา ...",
+        "snippet_highlighted_words": [
+          "กัมพูชา",
+          "ไทย",
+          "กัมพูชา"
+        ],
+        "source": "Wikipedia"
+      },
+      {
+        "position": 6,
+        "title": "สงครามข้อมูลอันดุเดือดทำให้ทั้งไทยและกัมพูชายังคงตึงเครียด",
+        "link": "https://www.bbc.com/thai/articles/c8jpkgj2911o",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bbc.com/thai/articles/c8jpkgj2911o&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChAWegQIHBAB",
+        "displayed_link": "https://www.bbc.com › articles",
+        "favicon": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf22677505880b0e0eb6c5ff264a9cb9017.png",
+        "date": "Aug 21, 2025",
+        "snippet": "ข้อพิพาทชายแดนที่ดำเนินมายาวนานนับศตวรรษทวีความรุนแรงขึ้นอย่างมาก เมื่อกัมพูชายิงจรวดถล่มพื้นที่ในประเทศไทยในเช้าวันที่ 24 ก.ค. ตามมาด้วยการโจมตีทางอากาศของไทย.",
+        "snippet_highlighted_words": [
+          "กัมพูชา",
+          "ไทย"
+        ],
+        "source": "BBC"
+      },
+      {
+        "position": 7,
+        "title": "\"สินสงคราม\" สัญลักษณ์ชัยชนะเหนือศัตรู | เข้มข่าวค่ำ | 26 ธ.ค. 68",
+        "link": "https://www.youtube.com/watch?v=NZ9fYE9xxs8",
+        "displayed_link": "6.8K+ views · 1 day ago",
+        "thumbnail": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf2a94779640404eb3d6c953f320bd64a36.jpeg",
+        "favicon": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf21578d456978c244562abfb67acabfdd1.png",
+        "snippet": "สิ่งของต่างๆ ของทหารกัมพูชา เมื่อทหารไทยยึดได้ หลังตีฐานทหารกัมพูชาแตก เขาเรียกว่า \"War trophy\" หรือ \"สินสงคราม\" โดยเพจดัง ได้โพสต์อธิบายถึงคำว่าสินสงคราม ...",
+        "duration": "6:36",
+        "source": "YouTube · PPTV HD 36"
+      },
+      {
+        "position": 8,
+        "title": "ลำดับเหตุการณ์นำมาสู่การปะทะระหว่าง \"ไทย-กัมพูชา\"",
+        "link": "https://www.thaipbs.or.th/news/content/354596",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.thaipbs.or.th/news/content/354596&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChAWegQIKRAB",
+        "displayed_link": "https://www.thaipbs.or.th › content",
+        "favicon": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf21c6430e6139e34adb50f46ae9e637796.png",
+        "date": "Jul 24, 2025",
+        "snippet": "สถานการณ์ชายแดน \"ไทย-กัมพูชา\" กลับมาอยู่ในจุดที่น่ากังวลอีกครั้ง หลังจากทหารไทยเหยียบกับระเบิดที่กัมพูชาวางไว้ 2 ครั้งในเวลาไล่เลี่ยกัน ...",
+        "snippet_highlighted_words": [
+          "ไทย",
+          "กัมพูชา",
+          "กัมพูชา"
+        ],
+        "source": "Thai PBS"
+      },
+      {
+        "position": 9,
+        "title": "วิพากษ์ฝรั่งเศสมองเหตุความขัดแย้งไทย-กัมพูชา \"ไม่ใช่ ...",
+        "link": "https://today.line.me/th/v3/article/aG5Lgz3",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://today.line.me/th/v3/article/aG5Lgz3&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChAWegQIJhAB",
+        "displayed_link": "https://today.line.me › article",
+        "favicon": "https://serpapi.com/searches/694fffaffbbeb545a9a3730d/images/6247b3988c8901aa7bdbde173367caf2c5847d3bba6d89e066e41ae6d5286c14.png",
+        "date": "4 days ago",
+        "snippet": "ตั้งแต่ช่วงแรกที่ไทย-กัมพูชาปะทะกันเมื่อกลางปีนี้ เวลาที่จะมีการสาวไส้สาเหตุความขัดแย้ง ทั้งในไทยและต่างประเทศก็มักจะลากยาวไปถึง \"เจ้าอาณานิคมฝรั่งเศส\" ...",
+        "snippet_highlighted_words": [
+          "ไทย",
+          "กัมพูชา",
+          "ไทย"
+        ],
+        "source": "LINE TODAY"
+      }
+    ],
+    "pagination": {
+      "current": 2,
+      "previous": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=0&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDx0wN6BAgJEAI",
+      "next": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=20&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDw0wN6BAgJEBc",
+      "other_pages": {
+        "1": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=0&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDy0wN6BAgJEAQ",
+        "3": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=20&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDy0wN6BAgJEAc",
+        "4": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=30&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDy0wN6BAgJEAk",
+        "5": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=40&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDy0wN6BAgJEAs",
+        "6": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=50&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDy0wN6BAgJEA0",
+        "7": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=60&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDy0wN6BAgJEA8",
+        "8": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=70&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDy0wN6BAgJEBE",
+        "9": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=80&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDy0wN6BAgJEBM",
+        "10": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=sP9PacHrDrnlwN4PtI6ZkAY&start=90&sa=N&ved=2ahUKEwjBg_z5jt6RAxW5MtAFHTRHBmI4ChDy0wN6BAgJEBU"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 2,
+      "previous_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=0",
+      "previous": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=0",
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=20",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=20",
+      "other_pages": {
+        "1": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=0",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=40",
+        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=50",
+        "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=60",
+        "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=70",
+        "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=80",
+        "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=90"
+      }
+    }
+  }

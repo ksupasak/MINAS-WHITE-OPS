@@ -1,0 +1,34 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3 mb-0">Results</h1>
+  <%= button_to "Reset All", destroy_all_results_path, method: :delete, data: { confirm: "Delete all results?" }, class: "btn btn-danger" %>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Feeder</th>
+      <th>Status</th>
+      <th>Posts</th>
+      <th>Return Posts</th>
+      <th>Regional</th>
+      <th>Finished</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @results.each do |result| %>
+      <tr>
+        <td><%= result.feeder.name %></td>
+        <td><span class="badge text-bg-secondary"><%= result.status %></span></td>
+        <td><%= result.posts.count %></td>
+        <td><%= result.post_count %></td>
+        <td><%= result.regional %></td>
+        <td><%= result.finished_at&.strftime("%Y-%m-%d %H:%M") %></td>
+        <td class="d-flex justify-content-end gap-2">
+          <%= link_to "View", result, class: "btn btn-sm btn-outline-primary" %>
+          <%= button_to "Delete", result_path(result), method: :delete, data: { confirm: "Delete this result?" }, class: "btn btn-sm btn-danger" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

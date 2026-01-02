@@ -1,0 +1,210 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber"><%= @model.display_name %></h1>
+  <div class="d-flex gap-2">
+    <%= link_to "Edit", edit_model_path(@model), class: "btn-cyber btn-secondary-cyber" %>
+    <%= button_to "Delete", model_path(@model), method: :delete, data: { confirm: "Delete this model?" }, class: "btn-cyber btn-danger-cyber" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8 mb-4">
+    <div class="glass-card">
+      <div class="card-header-cyber">
+        <span class="header-icon">🤖</span>
+        <h3>Model Details</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="model-hero">
+          <span class="model-big-icon"><%= @model.provider_icon %></span>
+          <div class="model-hero-info">
+            <h2 class="model-name"><%= @model.name %></h2>
+            <div class="model-meta">
+              <span class="provider-badge <%= @model.provider %>"><%= @model.provider&.capitalize %></span>
+              <span class="status-badge <%= @model.active? ? 'active' : 'inactive' %>">
+                <%= @model.active? ? "Active" : "Inactive" %>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <% if @model.description.present? %>
+          <div class="model-description mt-4">
+            <p><%= @model.description %></p>
+          </div>
+        <% end %>
+
+        <% if @model.capabilities.present? %>
+          <div class="capabilities-section mt-4">
+            <h5 class="section-title">Capabilities</h5>
+            <div class="capabilities-grid">
+              <% @model.capabilities.each do |cap| %>
+                <div class="capability-card">
+                  <span class="cap-icon">
+                    <% case cap %>
+                    <% when "chat" %>💬
+                    <% when "embedding" %>📊
+                    <% when "sentiment" %>❤️
+                    <% when "summarization" %>📝
+                    <% when "translation" %>🌐
+                    <% else %>✨
+                    <% end %>
+                  </span>
+                  <span class="cap-name"><%= cap.capitalize %></span>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 mb-4">
+    <div class="glass-card">
+      <div class="card-header-cyber">
+        <span class="header-icon">◈</span>
+        <h3>Configuration</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="info-row">
+          <span class="info-label">Model ID</span>
+          <span class="info-value"><code><%= @model.model_id || "—" %></code></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Version</span>
+          <span class="info-value"><%= @model.version || "—" %></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Host</span>
+          <span class="info-value"><code><%= @model.host || "—" %></code></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Token</span>
+          <span class="info-value">
+            <% if @model.token.present? %>
+              <span class="token-masked">••••••••<%= @model.token.last(4) %></span>
+            <% else %>
+              —
+            <% end %>
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Created</span>
+          <span class="info-value"><%= @model.created_at&.strftime("%Y-%m-%d %H:%M") %></span>
+        </div>
+      </div>
+    </div>
+
+    <%= link_to "← Back to Models", models_path, class: "btn-cyber btn-secondary-cyber w-100 mt-3" %>
+  </div>
+</div>
+
+<style>
+.model-hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.model-big-icon {
+  font-size: 64px;
+}
+
+.model-hero-info {
+  flex: 1;
+}
+
+.model-name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cyber-text-primary);
+  margin: 0 0 12px 0;
+}
+
+.model-meta {
+  display: flex;
+  gap: 12px;
+}
+
+.provider-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.provider-badge.ollama { background: rgba(255, 200, 100, 0.15); color: #ffc864; }
+.provider-badge.openai { background: rgba(0, 200, 100, 0.15); color: #00c864; }
+.provider-badge.anthropic { background: rgba(200, 150, 100, 0.15); color: #c89664; }
+.provider-badge.huggingface { background: rgba(255, 200, 0, 0.15); color: #ffc800; }
+.provider-badge.custom { background: rgba(0, 240, 255, 0.15); color: var(--cyber-primary); }
+
+.model-description {
+  color: var(--cyber-text-secondary);
+  line-height: 1.6;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: var(--cyber-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.capability-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--cyber-border);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.capability-card:hover {
+  border-color: var(--cyber-primary);
+  background: rgba(0, 240, 255, 0.05);
+}
+
+.cap-icon {
+  font-size: 24px;
+}
+
+.cap-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cyber-text-secondary);
+  text-transform: uppercase;
+}
+
+.token-masked {
+  font-family: monospace;
+  color: var(--cyber-text-muted);
+}
+
+code {
+  padding: 2px 8px;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--cyber-border);
+  border-radius: 4px;
+  color: var(--cyber-primary);
+  font-family: monospace;
+  font-size: 11px;
+}
+</style>

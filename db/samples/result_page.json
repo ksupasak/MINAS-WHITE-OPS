@@ -1,0 +1,267 @@
+{
+    "search_metadata": {
+      "id": "694ffb49c20348fc8448f8ac",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/4ebb757f5c18bfe7/694ffb49c20348fc8448f8ac.json",
+      "pixel_position_endpoint": "https://serpapi.com/searches/4ebb757f5c18bfe7/694ffb49c20348fc8448f8ac.json_with_pixel_position",
+      "created_at": "2025-12-27 15:29:13 UTC",
+      "processed_at": "2025-12-27 15:29:13 UTC",
+      "google_url": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&oq=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=0&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/4ebb757f5c18bfe7/694ffb49c20348fc8448f8ac.html",
+      "total_time_taken": 0.95
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "สงครามไทยกัมพูชา",
+      "google_domain": "google.com",
+      "start": 0,
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "สงครามไทยกัมพูชา",
+      "total_results": 9020000,
+      "time_taken_displayed": 0.32,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "inline_videos": [
+      {
+        "position": 1,
+        "title": "#ด่วน เขมรสิ้นสภาพไทยยึด99% รบแตกทุกแนว ถล่มฐานพระวิหาร,คา ...",
+        "link": "https://www.youtube.com/watch?v=fE7PD7wopMQ",
+        "thumbnail": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/8e2bbad0d8f2a853e50839be9f026e3fa345c2afa91c13ef5aae701a3f5e8036.jpeg",
+        "channel": "เซียนสนาม ENHD",
+        "duration": "10:45",
+        "platform": "YouTube"
+      },
+      {
+        "position": 2,
+        "title": "ไทย-กัมพูชา ปะทะเดือด! รอบ 19 วัน จัดเต็มทวงคืนอธิปไตย | ทันข่าว ...",
+        "link": "https://www.youtube.com/watch?v=QlSUzoy6ilY",
+        "thumbnail": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/8e2bbad0d8f2a853585e1be630077135e043b27024e404e54922c25f113a75db.jpeg",
+        "channel": "Nation Online",
+        "duration": "7:42",
+        "platform": "YouTube"
+      },
+      {
+        "position": 3,
+        "title": "LIVE : ด่วน! GBC ลงนามหยุดยิง พักรบ 72 ชม. ศึกไทย-กัมพูชา แลก ...",
+        "link": "https://www.youtube.com/watch?v=pzbZDgCsS-g",
+        "thumbnail": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/8e2bbad0d8f2a853d6361577c1ac40f2ab2aeac890a265ca872590b36da2bdb3.jpeg",
+        "channel": "Thairath News - ข่าวไทยรัฐ",
+        "duration": "3:07:01",
+        "platform": "YouTube"
+      },
+      {
+        "position": 4,
+        "title": "ไทย-กัมพูชา บรรลุข้อตกลงหยุดยิง 72 ชม. วิเคราะห์แผนลับ 'ฮุน มา ...",
+        "link": "https://www.youtube.com/watch?v=uxrnzK_XwiQ",
+        "thumbnail": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/8e2bbad0d8f2a853fbf79f6fdf2bc8c12f70e6d80a5d0d916aa64614b558a436.jpeg",
+        "channel": "Nation Online",
+        "duration": "8:30",
+        "platform": "YouTube"
+      }
+    ],
+    "related_questions": [
+      {
+        "question": "อะไรคือสาเหตุของสถานการณ์ชายแดนไทย-กัมพูชา",
+        "type": "featured_snippet",
+        "snippet": "เหตุการณ์ความรุนแรงที่เกิดขึ้นบริเวณชายแดนไทย- กัมพูชาในปี 2554 และปี 2568 มีสาเหตุจากปัญหาการอ้างสิทธิ์ในพื้นที่ทับซ้อนรอบเขตปราส าทเขาพระวิหาร ซึ่งการแบ่งเขตพื้นที่เหล่านี้ยังคงไม่ชัดเจน แม้จะมีคำพิพากษาจากศาลโลกถึงสองครั้งแล้วก็ตาม .",
+        "title": "ย้อนเหตุการณ์ความขัดแย้ง ชายแดนไทย - กัมพูชา จากปี 2554 ถึง 2568",
+        "date": "Jul 29, 2025",
+        "link": "https://www.facebook.com/thestandardth/posts/key-messages-%E0%B8%A2%E0%B9%89%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%82%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%A2%E0%B9%89%E0%B8%87-%E0%B8%8A%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%94%E0%B8%99%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2-%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9B%E0%B8%B5-2554-%E0%B8%96%E0%B8%B6%E0%B8%87-2568%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7/1097243932534949/#:~:text=%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B8%E0%B8%99%E0%B9%81%E0%B8%A3%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94,%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B8%AA%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%81%E0%B9%87%E0%B8%95%E0%B8%B2%E0%B8%A1%20.",
+        "displayed_link": "https://www.facebook.com › thestandardth › posts › key-...",
+        "source_logo": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/9f4ea6fc0d11a23ce6615e63c44fa61f308e8a062e7c5edd2a0dfee6719297d4.png",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVEZFFTMVpSVjNRNWVIQnhhelF6WDFCcWRuVkNjblF6VFV3MU5tSk9RbWh1TUhsTWEzRk5lVGRZVXpkeGRGOXVNbk10YUhsbFdFbExSbUZqZUc5dk1UZHJRMFpNVkVaT1owVXRWV2x2VW5oMlYxcFlVRkpXTTFGUlVSSVhVM1owVUdGbVVFSkdja3h1TjE5VlVEVmhObEF3VVRnYUlrRkdUVUZIUjI5c09EWm5PVmd0YTJ0WmFUWTRlbVZDWm5Cek9YQnhhRFpyVkdjIiwiZmN2IjoiMyIsImVpIjoiU3Z0UGFmUEJGckxuN19VUDVhNlAwUTgiLCJxYyI6IkNqTGd1S3JndUlmZ3VJVGd1S1BndUxMZ3VLRWc0TG1FNExpWDRMaWlJT0M0Z2VDNHNlQzRvZUM0bnVDNHVlQzRpdUM0c2hBMUtBRXhBQUFBSVBSQTJqOTlFLUlnUHciLCJxdWVzdGlvbiI6IuC4reC4sOC5hOC4o+C4hOC4t+C4reC4quC4suC5gOC4q+C4leC4uOC4guC4reC4h+C4quC4luC4suC4meC4geC4suC4o+C4k+C5jOC4iuC4suC4ouC5geC4lOC4meC5hOC4l+C4oi3guIHguLHguKHguJ7guLnguIrguLIiLCJsayI6ImN5WExNUTVBWUF5RzRYdVllam4zOENjR0VSc2hGZ2syR3pGOHZjMTdGRTF0YmQtblZZMHVOS01IcmFqa2NLSVJId3oxdVI5NGhDbUU0UzFhNG1TSmI3U2pEZmx2b3pjWjN2QkJ1dnd2SHciLCJicyI6ImM2V1J2MG9EUVJER3VYWUxzVHl1bWhkSWMyQm5FNnhFc0k1WWk4OGdXSGhSTkFRN18zRk44QklPX3dUaERLS3pkcjdKVi10THVQdXRMT3BGTFd5VzNmbS0tYzNPakhsTnpDNzBEdHJBSGtBblVIYy1NWElMbmNIdVFhZlFNNmhDLTR3ZlVUcjNxcGJRZ2hlWGVBSjdEQjN5T1laMThWTnY4TmdMRi1uUWVnLXRvQ09vRGRiMGJTZmZ6clotUVVxYktSRXFjNkhDYnp2aHdmbWRaY0Q4d2h3bVpobDZEWDMwcXZmMHFZeFlySUZlTVdYNlVkN3VjeG9UUXQyM212U2xtNjlrM1lpUXlKQUlrVzhVaVJpSkhIT1ptUFhZQTl1cVdYOU9MX1EwTEZUejJYeGRWMGdwMDV1bGZDMWJfWE13TFpwOHhzV3MwanducGtkcDV0Zmd6d0dWZ3BNSmJWY2hwWVoxV2lWY1lzQ093MmpDVEZwbDBtSWgzOHcyZnNMTGZfbUx5VHMiLCJpZCI6ImZjX1N2dFBhZlBCRnJMbjdfVVA1YTZQMFE4XzYifQ==",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVEZFFTMVpSVjNRNWVIQnhhelF6WDFCcWRuVkNjblF6VFV3MU5tSk9RbWh1TUhsTWEzRk5lVGRZVXpkeGRGOXVNbk10YUhsbFdFbExSbUZqZUc5dk1UZHJRMFpNVkVaT1owVXRWV2x2VW5oMlYxcFlVRkpXTTFGUlVSSVhVM1owVUdGbVVFSkdja3h1TjE5VlVEVmhObEF3VVRnYUlrRkdUVUZIUjI5c09EWm5PVmd0YTJ0WmFUWTRlbVZDWm5Cek9YQnhhRFpyVkdjIiwiZmN2IjoiMyIsImVpIjoiU3Z0UGFmUEJGckxuN19VUDVhNlAwUTgiLCJxYyI6IkNqTGd1S3JndUlmZ3VJVGd1S1BndUxMZ3VLRWc0TG1FNExpWDRMaWlJT0M0Z2VDNHNlQzRvZUM0bnVDNHVlQzRpdUM0c2hBMUtBRXhBQUFBSVBSQTJqOTlFLUlnUHciLCJxdWVzdGlvbiI6IuC4reC4sOC5hOC4o%2BC4hOC4t%2BC4reC4quC4suC5gOC4q%2BC4leC4uOC4guC4reC4h%2BC4quC4luC4suC4meC4geC4suC4o%2BC4k%2BC5jOC4iuC4suC4ouC5geC4lOC4meC5hOC4l%2BC4oi3guIHguLHguKHguJ7guLnguIrguLIiLCJsayI6ImN5WExNUTVBWUF5RzRYdVllam4zOENjR0VSc2hGZ2syR3pGOHZjMTdGRTF0YmQtblZZMHVOS01IcmFqa2NLSVJId3oxdVI5NGhDbUU0UzFhNG1TSmI3U2pEZmx2b3pjWjN2QkJ1dnd2SHciLCJicyI6ImM2V1J2MG9EUVJER3VYWUxzVHl1bWhkSWMyQm5FNnhFc0k1WWk4OGdXSGhSTkFRN18zRk44QklPX3dUaERLS3pkcjdKVi10THVQdXRMT3BGTFd5VzNmbS0tYzNPakhsTnpDNzBEdHJBSGtBblVIYy1NWElMbmNIdVFhZlFNNmhDLTR3ZlVUcjNxcGJRZ2hlWGVBSjdEQjN5T1laMThWTnY4TmdMRi1uUWVnLXRvQ09vRGRiMGJTZmZ6clotUVVxYktSRXFjNkhDYnp2aHdmbWRaY0Q4d2h3bVpobDZEWDMwcXZmMHFZeFlySUZlTVdYNlVkN3VjeG9UUXQyM212U2xtNjlrM1lpUXlKQUlrVzhVaVJpSkhIT1ptUFhZQTl1cVdYOU9MX1EwTEZUejJYeGRWMGdwMDV1bGZDMWJfWE13TFpwOHhzV3MwanducGtkcDV0Zmd6d0dWZ3BNSmJWY2hwWVoxV2lWY1lzQ093MmpDVEZwbDBtSWgzOHcyZnNMTGZfbUx5VHMiLCJpZCI6ImZjX1N2dFBhZlBCRnJMbjdfVVA1YTZQMFE4XzYifQ%3D%3D"
+      },
+      {
+        "question": "ศึกเขาพระวิหารใครชนะ",
+        "type": "featured_snippet",
+        "snippet": "วันที่ 15 มิถุนายน 2505 ศาลยุติธรรมระหว่างประเทศ จึงได้ตัดสินให้ปราสาทเขาพระวิหารเป็นของกัมพูชา ด้วยคะแนนเสียง 9 ต่อ 3 นอกจากนั้นยังตัดสินด้วยคะแนนเสียง 7 ต่อ 5 ให้ประเทศไทยส่งคืนโบราณวัตถุที่นำออกมาจากปราสาทเขาพระวิหารตั้งแต่ปี 2497 ซึ่งเป็นปีที่ประเทศไทยได้เข้ายึดครองพื้นที่ดังกล่าว",
+        "title": "คดีปราสาทพระวิหาร - วิกิพีเดีย",
+        "link": "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%94%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3#:~:text=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%2015%20%E0%B8%A1%E0%B8%B4%E0%B8%96%E0%B8%B8%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%99%202505%20%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%A2%E0%B8%B8%E0%B8%95%E0%B8%B4%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%20%E0%B8%88%E0%B8%B6%E0%B8%87%E0%B9%84%E0%B8%94%E0%B9%89,%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%B6%E0%B8%94%E0%B8%84%E0%B8%A3%E0%B8%AD%E0%B8%87%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%A7",
+        "displayed_link": "https://th.wikipedia.org › wiki › คดีปราสาทพระวิหาร",
+        "source_logo": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/9f4ea6fc0d11a23ce6615e63c44fa61fc3e6a9557e7fffb71bbc1a8ccf5e68e2.png",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVEZFFTMVpSVjNRNWVIQnhhelF6WDFCcWRuVkNjblF6VFV3MU5tSk9RbWh1TUhsTWEzRk5lVGRZVXpkeGRGOXVNbk10YUhsbFdFbExSbUZqZUc5dk1UZHJRMFpNVkVaT1owVXRWV2x2VW5oMlYxcFlVRkpXTTFGUlVSSVhVM1owVUdGbVVFSkdja3h1TjE5VlVEVmhObEF3VVRnYUlrRkdUVUZIUjI5c09EWm5PVmd0YTJ0WmFUWTRlbVZDWm5Cek9YQnhhRFpyVkdjIiwiZmN2IjoiMyIsImVpIjoiU3Z0UGFmUEJGckxuN19VUDVhNlAwUTgiLCJxYyI6IkNqTGd1S3JndUlmZ3VJVGd1S1BndUxMZ3VLRWc0TG1FNExpWDRMaWlJT0M0Z2VDNHNlQzRvZUM0bnVDNHVlQzRpdUM0c2hBMUtBRXhBQUFBSVBSQTJqOTlFLUlnUHciLCJxdWVzdGlvbiI6IuC4qOC4tuC4geC5gOC4guC4suC4nuC4o+C4sOC4p+C4tOC4q+C4suC4o+C5g+C4hOC4o+C4iuC4meC4sCIsImxrIjoiY3gzS3V3bUFVQURGMEQyczNpcHU1cTl5QXhzYkN3V2JoNGpFYlRLS0Y3dHdTTlBLSVlfMHhiZVRRYTRpcTJ4U1U3dmNjb1pEZVVhWl9tS1dKYzhIIiwiYnMiOiJjNldSdjBvRFFSREd1WFlMc1R5dW1oZEljMkJuRTZ4RXNJNVlpODhnV0hoUk5BUTdfM0ZOOEJJT193VGhES0t6ZHI3SlYtdEx1UHV0TE9wRkxXeVczZm0tLWMzT2pIbE56QzcwRHRyQUhrQW5VSGMtTVhJTG5jSHVRYWZRTTZoQy00d2ZVVHIzcXBiUWdoZVhlQUo3REIzeU9ZWjE4Vk52OE5nTEYtblFlZy10b0NPb0RkYjBiU2ZmenJaLVFVcWJLUkVxYzZIQ2J6dmh3Zm1kWmNEOHdod21aaGw2RFgzMHF2ZjBxWXhZcklGZU1XWDZVZDd1Y3hvVFF0MjNtdlNsbTY5azNZaVF5SkFJa1c4VWlSaUpISE9abVBYWUE5dXFXWDlPTF9RMExGVHoyWHhkVjBncDA1dWxmQzFiX1hNd0xacDh4c1dzMGp3bnBrZHA1dGZnendHVmdwTUpiVmNocFlaMVdpVmNZc0NPdzJqQ1RGcGwwbUloMzh3MmZzTExmX21MeVRzIiwiaWQiOiJmY19TdnRQYWZQQkZyTG43X1VQNWE2UDBROF82In0=",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVEZFFTMVpSVjNRNWVIQnhhelF6WDFCcWRuVkNjblF6VFV3MU5tSk9RbWh1TUhsTWEzRk5lVGRZVXpkeGRGOXVNbk10YUhsbFdFbExSbUZqZUc5dk1UZHJRMFpNVkVaT1owVXRWV2x2VW5oMlYxcFlVRkpXTTFGUlVSSVhVM1owVUdGbVVFSkdja3h1TjE5VlVEVmhObEF3VVRnYUlrRkdUVUZIUjI5c09EWm5PVmd0YTJ0WmFUWTRlbVZDWm5Cek9YQnhhRFpyVkdjIiwiZmN2IjoiMyIsImVpIjoiU3Z0UGFmUEJGckxuN19VUDVhNlAwUTgiLCJxYyI6IkNqTGd1S3JndUlmZ3VJVGd1S1BndUxMZ3VLRWc0TG1FNExpWDRMaWlJT0M0Z2VDNHNlQzRvZUM0bnVDNHVlQzRpdUM0c2hBMUtBRXhBQUFBSVBSQTJqOTlFLUlnUHciLCJxdWVzdGlvbiI6IuC4qOC4tuC4geC5gOC4guC4suC4nuC4o%2BC4sOC4p%2BC4tOC4q%2BC4suC4o%2BC5g%2BC4hOC4o%2BC4iuC4meC4sCIsImxrIjoiY3gzS3V3bUFVQURGMEQyczNpcHU1cTl5QXhzYkN3V2JoNGpFYlRLS0Y3dHdTTlBLSVlfMHhiZVRRYTRpcTJ4U1U3dmNjb1pEZVVhWl9tS1dKYzhIIiwiYnMiOiJjNldSdjBvRFFSREd1WFlMc1R5dW1oZEljMkJuRTZ4RXNJNVlpODhnV0hoUk5BUTdfM0ZOOEJJT193VGhES0t6ZHI3SlYtdEx1UHV0TE9wRkxXeVczZm0tLWMzT2pIbE56QzcwRHRyQUhrQW5VSGMtTVhJTG5jSHVRYWZRTTZoQy00d2ZVVHIzcXBiUWdoZVhlQUo3REIzeU9ZWjE4Vk52OE5nTEYtblFlZy10b0NPb0RkYjBiU2ZmenJaLVFVcWJLUkVxYzZIQ2J6dmh3Zm1kWmNEOHdod21aaGw2RFgzMHF2ZjBxWXhZcklGZU1XWDZVZDd1Y3hvVFF0MjNtdlNsbTY5azNZaVF5SkFJa1c4VWlSaUpISE9abVBYWUE5dXFXWDlPTF9RMExGVHoyWHhkVjBncDA1dWxmQzFiX1hNd0xacDh4c1dzMGp3bnBrZHA1dGZnendHVmdwTUpiVmNocFlaMVdpVmNZc0NPdzJqQ1RGcGwwbUloMzh3MmZzTExmX21MeVRzIiwiaWQiOiJmY19TdnRQYWZQQkZyTG43X1VQNWE2UDBROF82In0%3D"
+      },
+      {
+        "question": "ไทยและกัมพูชาทะเลาะอะไรกัน",
+        "type": "featured_snippet",
+        "snippet": "เมื่อ 14 ปีก่อน ไทยและกัมพูชาเคยเปิดฉากตอบโต้กันด้วยอาวุธหนักจากข้อพิพาทเหนือปราสาทเขาพระวิหาร วันนี้เหตุการณ์คล้ายกันได้ปะทุขึ้นอีกครั้ง เมื่อกองกำลังทั้งสองฝ่ายปะทะกันใกล้ปราสาทตาเมือนธม ซึ่งเป็นหนึ่งในพื้นที่พิพาทล่าสุด",
+        "title": "ความขัดแย้งไทย-กัมพูชา เหตุใดจึงยกระดับสู่ความรุนแรงอย่างมากในวันเดียว",
+        "date": "Jul 24, 2025",
+        "link": "https://www.bbc.com/thai/articles/c2ezek0p10jo#:~:text=%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%2014%20%E0%B8%9B%E0%B8%B5%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%99%20%E0%B9%84%E0%B8%97%E0%B8%A2,%E0%B8%AB%E0%B8%99%E0%B8%B6%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%99%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B2%E0%B8%97%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%AA%E0%B8%B8%E0%B8%94",
+        "displayed_link": "https://www.bbc.com › thai › articles",
+        "source_logo": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/9f4ea6fc0d11a23ce6615e63c44fa61f9b9af0cc9d33670c5dad166260a8d5a4.png",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVEZFFTMVpSVjNRNWVIQnhhelF6WDFCcWRuVkNjblF6VFV3MU5tSk9RbWh1TUhsTWEzRk5lVGRZVXpkeGRGOXVNbk10YUhsbFdFbExSbUZqZUc5dk1UZHJRMFpNVkVaT1owVXRWV2x2VW5oMlYxcFlVRkpXTTFGUlVSSVhVM1owVUdGbVVFSkdja3h1TjE5VlVEVmhObEF3VVRnYUlrRkdUVUZIUjI5c09EWm5PVmd0YTJ0WmFUWTRlbVZDWm5Cek9YQnhhRFpyVkdjIiwiZmN2IjoiMyIsImVpIjoiU3Z0UGFmUEJGckxuN19VUDVhNlAwUTgiLCJxYyI6IkNqTGd1S3JndUlmZ3VJVGd1S1BndUxMZ3VLRWc0TG1FNExpWDRMaWlJT0M0Z2VDNHNlQzRvZUM0bnVDNHVlQzRpdUM0c2hBMUtBRXhBQUFBSVBSQTJqOTlFLUlnUHciLCJxdWVzdGlvbiI6IuC5hOC4l+C4ouC5geC4peC4sOC4geC4seC4oeC4nuC4ueC4iuC4suC4l+C4sOC5gOC4peC4suC4sOC4reC4sOC5hOC4o+C4geC4seC4mSIsImxrIjoiYzVQeWZMQ3o1Y0dPNlE5MkxGSjRzS1B4d1k2TkQzWXNmTEJqM29NZE94X3M2SHF3WTVNQ1dITERnNTBORDNZc0JmS0JiS0RRV3JBUVVPTml1SzZaQUEiLCJicyI6ImM2V1J2MG9EUVJER3VYWUxzVHl1bWhkSWMyQm5FNnhFc0k1WWk4OGdXSGhSTkFRN18zRk44QklPX3dUaERLS3pkcjdKVi10THVQdXRMT3BGTFd5VzNmbS0tYzNPakhsTnpDNzBEdHJBSGtBblVIYy1NWElMbmNIdVFhZlFNNmhDLTR3ZlVUcjNxcGJRZ2hlWGVBSjdEQjN5T1laMThWTnY4TmdMRi1uUWVnLXRvQ09vRGRiMGJTZmZ6clotUVVxYktSRXFjNkhDYnp2aHdmbWRaY0Q4d2h3bVpobDZEWDMwcXZmMHFZeFlySUZlTVdYNlVkN3VjeG9UUXQyM212U2xtNjlrM1lpUXlKQUlrVzhVaVJpSkhIT1ptUFhZQTl1cVdYOU9MX1EwTEZUejJYeGRWMGdwMDV1bGZDMWJfWE13TFpwOHhzV3MwanducGtkcDV0Zmd6d0dWZ3BNSmJWY2hwWVoxV2lWY1lzQ093MmpDVEZwbDBtSWgzOHcyZnNMTGZfbUx5VHMiLCJpZCI6ImZjX1N2dFBhZlBCRnJMbjdfVVA1YTZQMFE4XzYifQ==",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVEZFFTMVpSVjNRNWVIQnhhelF6WDFCcWRuVkNjblF6VFV3MU5tSk9RbWh1TUhsTWEzRk5lVGRZVXpkeGRGOXVNbk10YUhsbFdFbExSbUZqZUc5dk1UZHJRMFpNVkVaT1owVXRWV2x2VW5oMlYxcFlVRkpXTTFGUlVSSVhVM1owVUdGbVVFSkdja3h1TjE5VlVEVmhObEF3VVRnYUlrRkdUVUZIUjI5c09EWm5PVmd0YTJ0WmFUWTRlbVZDWm5Cek9YQnhhRFpyVkdjIiwiZmN2IjoiMyIsImVpIjoiU3Z0UGFmUEJGckxuN19VUDVhNlAwUTgiLCJxYyI6IkNqTGd1S3JndUlmZ3VJVGd1S1BndUxMZ3VLRWc0TG1FNExpWDRMaWlJT0M0Z2VDNHNlQzRvZUM0bnVDNHVlQzRpdUM0c2hBMUtBRXhBQUFBSVBSQTJqOTlFLUlnUHciLCJxdWVzdGlvbiI6IuC5hOC4l%2BC4ouC5geC4peC4sOC4geC4seC4oeC4nuC4ueC4iuC4suC4l%2BC4sOC5gOC4peC4suC4sOC4reC4sOC5hOC4o%2BC4geC4seC4mSIsImxrIjoiYzVQeWZMQ3o1Y0dPNlE5MkxGSjRzS1B4d1k2TkQzWXNmTEJqM29NZE94X3M2SHF3WTVNQ1dITERnNTBORDNZc0JmS0JiS0RRV3JBUVVPTml1SzZaQUEiLCJicyI6ImM2V1J2MG9EUVJER3VYWUxzVHl1bWhkSWMyQm5FNnhFc0k1WWk4OGdXSGhSTkFRN18zRk44QklPX3dUaERLS3pkcjdKVi10THVQdXRMT3BGTFd5VzNmbS0tYzNPakhsTnpDNzBEdHJBSGtBblVIYy1NWElMbmNIdVFhZlFNNmhDLTR3ZlVUcjNxcGJRZ2hlWGVBSjdEQjN5T1laMThWTnY4TmdMRi1uUWVnLXRvQ09vRGRiMGJTZmZ6clotUVVxYktSRXFjNkhDYnp2aHdmbWRaY0Q4d2h3bVpobDZEWDMwcXZmMHFZeFlySUZlTVdYNlVkN3VjeG9UUXQyM212U2xtNjlrM1lpUXlKQUlrVzhVaVJpSkhIT1ptUFhZQTl1cVdYOU9MX1EwTEZUejJYeGRWMGdwMDV1bGZDMWJfWE13TFpwOHhzV3MwanducGtkcDV0Zmd6d0dWZ3BNSmJWY2hwWVoxV2lWY1lzQ093MmpDVEZwbDBtSWgzOHcyZnNMTGZfbUx5VHMiLCJpZCI6ImZjX1N2dFBhZlBCRnJMbjdfVVA1YTZQMFE4XzYifQ%3D%3D"
+      },
+      {
+        "question": "อาณาจักรเขมร ล่ม สลาย เพราะ อะไร",
+        "type": "featured_snippet",
+        "snippet": "เฉพาะสงครามเขมรสมัยโบราณกับเพื่อนบ้านทางตะวันออก ช่วง พ.ศ. 1487-1746 มีสงคราม 8 ครั้ง รบกับเวียดนาม 1 ครั้ง, รบกับจาม 6 ครั้ง และรบกับจามและเวียดนาม 1 ครั้ง โดยสงครามเขมรกับจามเป็นสงครามที่สำคัญ เพราะทำให้ทั้ง 2 ฝ่ายต้องบาดเจ็บล้มตายจำนวนมาก ทั้งจากอาวุธและจากไข้ป่า อันเป็นเหตุล่มสลายของอาณาจักร",
+        "title": "“เหตุล่มสลาย” ของเขมรโบราณที่ยิ่งใหญ่ คืออะไร? - ศิลปวัฒนธรรม",
+        "date": "Jun 12, 2025",
+        "link": "https://www.silpa-mag.com/history/article_145907#:~:text=%E0%B9%80%E0%B8%89%E0%B8%9E%E0%B8%B2%E0%B8%B0%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%82%E0%B8%A1%E0%B8%A3%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%A2%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93,%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B9%88%E0%B8%A1%E0%B8%AA%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%AD%E0%B8%B2%E0%B8%93%E0%B8%B2%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3",
+        "displayed_link": "https://www.silpa-mag.com › history › article_145907",
+        "source_logo": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/9f4ea6fc0d11a23ce6615e63c44fa61f0b685dba52375d2ca94cee042c14cbd8.png",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVEZFFTMVpSVjNRNWVIQnhhelF6WDFCcWRuVkNjblF6VFV3MU5tSk9RbWh1TUhsTWEzRk5lVGRZVXpkeGRGOXVNbk10YUhsbFdFbExSbUZqZUc5dk1UZHJRMFpNVkVaT1owVXRWV2x2VW5oMlYxcFlVRkpXTTFGUlVSSVhVM1owVUdGbVVFSkdja3h1TjE5VlVEVmhObEF3VVRnYUlrRkdUVUZIUjI5c09EWm5PVmd0YTJ0WmFUWTRlbVZDWm5Cek9YQnhhRFpyVkdjIiwiZmN2IjoiMyIsImVpIjoiU3Z0UGFmUEJGckxuN19VUDVhNlAwUTgiLCJxYyI6IkNqTGd1S3JndUlmZ3VJVGd1S1BndUxMZ3VLRWc0TG1FNExpWDRMaWlJT0M0Z2VDNHNlQzRvZUM0bnVDNHVlQzRpdUM0c2hBMUtBRXhBQUFBSVBSQTJqOTlFLUlnUHciLCJxdWVzdGlvbiI6IuC4reC4suC4k+C4suC4iOC4seC4geC4o+C5gOC4guC4oeC4oyDguKXguYjguKEg4Liq4Lil4Liy4LiiIOC5gOC4nuC4o+C4suC4sCDguK3guLDguYTguKMiLCJsayI6ImM1T0tmTEJqN1lNZG14N3NtQXdtT3g3czJQaGdSLU9ESFlzVkh1eHNlTENqNmNHT2hXRE9qcVVQZGdJbEZ3SlpxMEFja09KRkVEWHpnQXJBX0EwS1lNTTJQTmpaQWhRQ0FBIiwiYnMiOiJjNldSdjBvRFFSREd1WFlMc1R5dW1oZEljMkJuRTZ4RXNJNVlpODhnV0hoUk5BUTdfM0ZOOEJJT193VGhES0t6ZHI3SlYtdEx1UHV0TE9wRkxXeVczZm0tLWMzT2pIbE56QzcwRHRyQUhrQW5VSGMtTVhJTG5jSHVRYWZRTTZoQy00d2ZVVHIzcXBiUWdoZVhlQUo3REIzeU9ZWjE4Vk52OE5nTEYtblFlZy10b0NPb0RkYjBiU2ZmenJaLVFVcWJLUkVxYzZIQ2J6dmh3Zm1kWmNEOHdod21aaGw2RFgzMHF2ZjBxWXhZcklGZU1XWDZVZDd1Y3hvVFF0MjNtdlNsbTY5azNZaVF5SkFJa1c4VWlSaUpISE9abVBYWUE5dXFXWDlPTF9RMExGVHoyWHhkVjBncDA1dWxmQzFiX1hNd0xacDh4c1dzMGp3bnBrZHA1dGZnendHVmdwTUpiVmNocFlaMVdpVmNZc0NPdzJqQ1RGcGwwbUloMzh3MmZzTExmX21MeVRzIiwiaWQiOiJmY19TdnRQYWZQQkZyTG43X1VQNWE2UDBROF82In0=",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSGVEZFFTMVpSVjNRNWVIQnhhelF6WDFCcWRuVkNjblF6VFV3MU5tSk9RbWh1TUhsTWEzRk5lVGRZVXpkeGRGOXVNbk10YUhsbFdFbExSbUZqZUc5dk1UZHJRMFpNVkVaT1owVXRWV2x2VW5oMlYxcFlVRkpXTTFGUlVSSVhVM1owVUdGbVVFSkdja3h1TjE5VlVEVmhObEF3VVRnYUlrRkdUVUZIUjI5c09EWm5PVmd0YTJ0WmFUWTRlbVZDWm5Cek9YQnhhRFpyVkdjIiwiZmN2IjoiMyIsImVpIjoiU3Z0UGFmUEJGckxuN19VUDVhNlAwUTgiLCJxYyI6IkNqTGd1S3JndUlmZ3VJVGd1S1BndUxMZ3VLRWc0TG1FNExpWDRMaWlJT0M0Z2VDNHNlQzRvZUM0bnVDNHVlQzRpdUM0c2hBMUtBRXhBQUFBSVBSQTJqOTlFLUlnUHciLCJxdWVzdGlvbiI6IuC4reC4suC4k%2BC4suC4iOC4seC4geC4o%2BC5gOC4guC4oeC4oyDguKXguYjguKEg4Liq4Lil4Liy4LiiIOC5gOC4nuC4o%2BC4suC4sCDguK3guLDguYTguKMiLCJsayI6ImM1T0tmTEJqN1lNZG14N3NtQXdtT3g3czJQaGdSLU9ESFlzVkh1eHNlTENqNmNHT2hXRE9qcVVQZGdJbEZ3SlpxMEFja09KRkVEWHpnQXJBX0EwS1lNTTJQTmpaQWhRQ0FBIiwiYnMiOiJjNldSdjBvRFFSREd1WFlMc1R5dW1oZEljMkJuRTZ4RXNJNVlpODhnV0hoUk5BUTdfM0ZOOEJJT193VGhES0t6ZHI3SlYtdEx1UHV0TE9wRkxXeVczZm0tLWMzT2pIbE56QzcwRHRyQUhrQW5VSGMtTVhJTG5jSHVRYWZRTTZoQy00d2ZVVHIzcXBiUWdoZVhlQUo3REIzeU9ZWjE4Vk52OE5nTEYtblFlZy10b0NPb0RkYjBiU2ZmenJaLVFVcWJLUkVxYzZIQ2J6dmh3Zm1kWmNEOHdod21aaGw2RFgzMHF2ZjBxWXhZcklGZU1XWDZVZDd1Y3hvVFF0MjNtdlNsbTY5azNZaVF5SkFJa1c4VWlSaUpISE9abVBYWUE5dXFXWDlPTF9RMExGVHoyWHhkVjBncDA1dWxmQzFiX1hNd0xacDh4c1dzMGp3bnBrZHA1dGZnendHVmdwTUpiVmNocFlaMVdpVmNZc0NPdzJqQ1RGcGwwbUloMzh3MmZzTExmX21MeVRzIiwiaWQiOiJmY19TdnRQYWZQQkZyTG43X1VQNWE2UDBROF82In0%3D"
+      }
+    ],
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "สมรภูมิเดือดส่งท้าย! ไทยคำราม F-16 ทิ้งบอมบ์สยบทัพเขมรที่ \"ตา ...",
+        "link": "https://www.thairath.co.th/video/channel/thairath-news/thairath-news-show/1176451",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.thairath.co.th/video/channel/thairath-news/thairath-news-show/1176451&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQFnoECBgQAQ",
+        "displayed_link": "https://www.thairath.co.th › channel › thairath-news-show",
+        "favicon": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/7db8a01de94e65032c2ede3d4e985f3af22e0cc486e75d06309f21e17981b0a2.png",
+        "date": "49 minutes ago",
+        "snippet": "เมื่อคืนนี้เรียกได้ว่า ทหารกัมพูชาเปิดปฏิบัติการอย่างหนัก คิดว่าคงจะมีประกาศหยุดยิงในวันนี้ โดยที่ปราสาทตาเมือน ในจังหวัดสุรินทร์ ทหารอาการต้องบิน F-16 ไปหย่อนไข่ ...",
+        "snippet_highlighted_words": [
+          "กัมพูชา"
+        ],
+        "source": "www.thairath.co.th"
+      },
+      {
+        "position": 2,
+        "title": "เหตุปะทะไทย–กัมพูชา พ.ศ. 2568",
+        "link": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%9B%E0%B8%B0%E0%B8%97%E0%B8%B0%E0%B9%84%E0%B8%97%E0%B8%A2%E2%80%93%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2_%E0%B8%9E.%E0%B8%A8._2568",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://th.wikipedia.org/wiki/%25E0%25B9%2580%25E0%25B8%25AB%25E0%25B8%2595%25E0%25B8%25B8%25E0%25B8%259B%25E0%25B8%25B0%25E0%25B8%2597%25E0%25B8%25B0%25E0%25B9%2584%25E0%25B8%2597%25E0%25B8%25A2%25E2%2580%2593%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%25A1%25E0%25B8%259E%25E0%25B8%25B9%25E0%25B8%258A%25E0%25B8%25B2_%25E0%25B8%259E.%25E0%25B8%25A8._2568&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQFnoECB4QAQ",
+        "displayed_link": "https://th.wikipedia.org › wiki › เห...",
+        "favicon": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/7db8a01de94e65032c2ede3d4e985f3ad8b804e33dfc3e57134007c14becdc19.png",
+        "snippet": "2568 (อังกฤษ: 2025 Thailand–Cambodia clashes ) เป็นเหตุปะทะระหว่างประเทศไทยและประเทศกัมพูชา ซึ่งนับเป็นการยกระดับความตึงเครียดที่มีมาอย่างต่อเนื่องจากสถานการณ์ความไม่สงบชายแดนไทย–กัม ...",
+        "snippet_highlighted_words": [
+          "เป็นเหตุปะทะระหว่างประเทศไทยและประเทศกัมพูชา"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "ภูมิหลัง",
+              "link": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%9B%E0%B8%B0%E0%B8%97%E0%B8%B0%E0%B9%84%E0%B8%97%E0%B8%A2%E2%80%93%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2_%E0%B8%9E.%E0%B8%A8._2568#%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87"
+            },
+            {
+              "title": "เส้นเวลา",
+              "link": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%9B%E0%B8%B0%E0%B8%97%E0%B8%B0%E0%B9%84%E0%B8%97%E0%B8%A2%E2%80%93%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2_%E0%B8%9E.%E0%B8%A8._2568#%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2"
+            },
+            {
+              "title": "เหตุปะทะรอบแรก",
+              "link": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%9B%E0%B8%B0%E0%B8%97%E0%B8%B0%E0%B9%84%E0%B8%97%E0%B8%A2%E2%80%93%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2_%E0%B8%9E.%E0%B8%A8._2568#%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%9B%E0%B8%B0%E0%B8%97%E0%B8%B0%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A3%E0%B8%81"
+            },
+            {
+              "title": "การหยุดยิงรอบแรก",
+              "link": "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%E0%B8%9B%E0%B8%B0%E0%B8%97%E0%B8%B0%E0%B9%84%E0%B8%97%E0%B8%A2%E2%80%93%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2_%E0%B8%9E.%E0%B8%A8._2568#%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%A2%E0%B8%B4%E0%B8%87%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B9%81%E0%B8%A3%E0%B8%81"
+            }
+          ]
+        },
+        "source": "Wikipedia"
+      },
+      {
+        "position": 3,
+        "title": "ไทย-กัมพูชา ลงนามในข้อตกลงหยุดยิงแล้ว - ทั้งสองฝ่าย ...",
+        "link": "https://www.facebook.com/thaiarmedforce/posts/%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2-%E0%B8%A5%E0%B8%87%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B9%83%E0%B8%99%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%95%E0%B8%81%E0%B8%A5%E0%B8%87%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%A2%E0%B8%B4%E0%B8%87%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7-%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%AA%E0%B8%AD%E0%B8%87%E0%B8%9D%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%88%E0%B8%B0%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%A2%E0%B8%B4%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B5%E0%B9%89-1200-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%A7/1402841691305359/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/thaiarmedforce/posts/%25E0%25B9%2584%25E0%25B8%2597%25E0%25B8%25A2-%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%25A1%25E0%25B8%259E%25E0%25B8%25B9%25E0%25B8%258A%25E0%25B8%25B2-%25E0%25B8%25A5%25E0%25B8%2587%25E0%25B8%2599%25E0%25B8%25B2%25E0%25B8%25A1%25E0%25B9%2583%25E0%25B8%2599%25E0%25B8%2582%25E0%25B9%2589%25E0%25B8%25AD%25E0%25B8%2595%25E0%25B8%2581%25E0%25B8%25A5%25E0%25B8%2587%25E0%25B8%25AB%25E0%25B8%25A2%25E0%25B8%25B8%25E0%25B8%2594%25E0%25B8%25A2%25E0%25B8%25B4%25E0%25B8%2587%25E0%25B9%2581%25E0%25B8%25A5%25E0%25B9%2589%25E0%25B8%25A7-%25E0%25B8%2597%25E0%25B8%25B1%25E0%25B9%2589%25E0%25B8%2587%25E0%25B8%25AA%25E0%25B8%25AD%25E0%25B8%2587%25E0%25B8%259D%25E0%25B9%2588%25E0%25B8%25B2%25E0%25B8%25A2%25E0%25B8%2588%25E0%25B8%25B0%25E0%25B8%25AB%25E0%25B8%25A2%25E0%25B8%25B8%25E0%25B8%2594%25E0%25B8%25A2%25E0%25B8%25B4%25E0%25B8%2587%25E0%25B9%2580%25E0%25B8%2597%25E0%25B8%25B5%25E0%25B9%2588%25E0%25B8%25A2%25E0%25B8%2587%25E0%25B8%25A7%25E0%25B8%25B1%25E0%25B8%2599%25E0%25B8%2599%25E0%25B8%25B5%25E0%25B9%2589-1200-%25E0%25B8%2582%25E0%25B8%25AD%25E0%25B8%2587%25E0%25B8%25A7/1402841691305359/&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQFnoECBsQAQ",
+        "displayed_link": "1.6K+ reactions · 11 hours ago",
+        "favicon": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/7db8a01de94e65032c2ede3d4e985f3a4c012cf6d7e730721df7b79bcdff55ac.png",
+        "snippet": "ไทย-กัมพูชา ลงนามในข้อตกลงหยุดยิงแล้ว - ทั้งสองฝ่ายจะหยุดยิงเที่ยงวันนี้ (12.00 ของวันที่ 27 ธ.ค.) - ทหารทั้งสองฝ่ายอยู่ที่ไหนก็อยู่ที่เดิม - จะกลับไปเริ่มงานตามข้อตกลงในที่ประชุม JBC ...",
+        "snippet_highlighted_words": [
+          "ทั้งสองฝ่ายจะหยุดยิงเที่ยงวันนี้ (12.00 ของวันที่ 27 ธ.ค"
+        ],
+        "source": "Facebook · thaiarmedforce.com"
+      },
+      {
+        "position": 4,
+        "title": "🔥 ปะทะเดือดชายแดน! \"ไทย-กัมพูชา\" ล่าสุด 🇹🇭 🇰🇭",
+        "link": "https://www.youtube.com/playlist?list=PLg9S5bqtYWfDtDBIzdL0-C0jbdDv1XlOn",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/playlist%3Flist%3DPLg9S5bqtYWfDtDBIzdL0-C0jbdDv1XlOn&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQFnoECEUQAQ",
+        "displayed_link": "20.4M+ followers",
+        "thumbnail": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/7db8a01de94e65032c2ede3d4e985f3adbbd7edfd85a0d6ddb055ebe07ab39f3.jpeg",
+        "favicon": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/7db8a01de94e65032c2ede3d4e985f3a0fe2ae54fefa92b3fb3eae39ab3a92d8.png",
+        "snippet": "ด่วน! เขมรเปิดศึกยิงทหารไทย ปราสาทตาเมือนธมเดือด ชาวบ้านหนีตาย กองทัพบก รายงาน \"ไทย-เขมร\" ปะทะลามเพิ่มหลายจุดชายแดน เริ่มใช้อาวุธหนัก BM21 รวมจุดผามออีแดง ไทยตอบโต้ตามแผน",
+        "snippet_highlighted_words": [
+          "เขมรเปิดศึกยิงทหารไทย ปราสาทตาเมือนธมเดือด ชาวบ้านหนีตาย"
+        ],
+        "source": "YouTube · Thairath News - ข่าวไทยรัฐ"
+      },
+      {
+        "position": 5,
+        "title": "ไทย-กัมพูชา ลงนาม \"หยุดยิงทันที\" การประชุม GBC วาระพิเศษ ...",
+        "link": "https://today.line.me/th/v3/article/vX3OKy5",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://today.line.me/th/v3/article/vX3OKy5&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQFnoECDEQAQ",
+        "displayed_link": "https://today.line.me › ... › ทั่วไป",
+        "favicon": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/7db8a01de94e65032c2ede3d4e985f3adf2db0597367ae7b2a0c86cb1b2be4b5.png",
+        "date": "3 hours ago",
+        "snippet": "ไทย-กัมพูชา ลงนาม \"หยุดยิงทันที ... 02:57. 39 องค์กรประชาชนประสานเสียง จี้หยุด สงครามไทย-เขมร สงครามชนชั้นนำ ปลุกใจรักชาติบังหน้า ทำชาวบ้านชายแดนรับกรรม.",
+        "snippet_highlighted_words": [
+          "ไทย",
+          "กัมพูชา",
+          "สงครามไทย",
+          "สงคราม"
+        ],
+        "source": "LINE TODAY"
+      },
+      {
+        "position": 6,
+        "title": "“ปราสาทเขาพระวิหาร” ปฐมเหตุความขัดแย้งชายแดนไทย - กัมพูชา",
+        "link": "https://www.pptvhd36.com/news/%E0%B8%AA%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%A1/264555",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.pptvhd36.com/news/%25E0%25B8%25AA%25E0%25B8%25B1%25E0%25B8%2587%25E0%25B8%2584%25E0%25B8%25A1/264555&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQFnoECDIQAQ",
+        "displayed_link": "https://www.pptvhd36.com › สังคม",
+        "favicon": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/7db8a01de94e65032c2ede3d4e985f3aea4f65f2256ef2f01cdc78da9825776c.png",
+        "date": "2 days ago",
+        "snippet": "2552 เกิดการยิงปะทะกันบริเว ภูมะเขือ และผามออีแดง การรบยืดเยื้อประมาณ 1 ชั่วโมง มีการใช้ปืนไร้แรงสะท้อนถอยหลัง และเครื่องยิงลูกระเบิด ส่งผลให้มีทหารเสียชีวิตและบาดเจ็บ และ ...",
+        "snippet_highlighted_words": [
+          "2552 เกิดการยิงปะทะกันบริเว ภูมะเขือ และผามออีแดง"
+        ],
+        "source": "pptvhd36"
+      },
+      {
+        "position": 7,
+        "title": "สงครามไทย - กัมพูชา : ใครคือมิตร และศัตรูของไทย?",
+        "link": "https://www.thaipost.net/x-cite-news/917968/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.thaipost.net/x-cite-news/917968/&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQFnoECC8QAQ",
+        "displayed_link": "https://www.thaipost.net › x-cite-n...",
+        "favicon": "https://serpapi.com/searches/694ffb49c20348fc8448f8ac/images/7db8a01de94e65032c2ede3d4e985f3a03e2247a75ada8a17ac5f7216c932d15.png",
+        "date": "Dec 19, 2025",
+        "snippet": "'จตุพร' ฟันธงเลือกตั้งวนลูปสับปลับ 'สงคราม-เงินเทา' ตัดสินชะตาบ้านเมือง · ดึงสหรัฐจุ้นศึกไทย-กัมพูชา 'ฮุน มาเนต' โทรหา 'รูบิโอ' ผลักดันให้มีการหยุดยิงทันที · พ่อทหารเหยียบทุ่นระเบิด ...",
+        "snippet_highlighted_words": [
+          "สงคราม",
+          "ไทย",
+          "กัมพูชา"
+        ],
+        "source": "ไทยโพสต์"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=10&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8NMDegQIDRAW",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=10&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8tMDegQIDRAE",
+        "3": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=20&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8tMDegQIDRAG",
+        "4": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=30&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8tMDegQIDRAI",
+        "5": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=40&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8tMDegQIDRAK",
+        "6": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=50&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8tMDegQIDRAM",
+        "7": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=60&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8tMDegQIDRAO",
+        "8": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=70&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8tMDegQIDRAQ",
+        "9": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=80&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8tMDegQIDRAS",
+        "10": "https://www.google.com/search?q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&sca_esv=a4c44c609eca2c0a&gl=us&hl=en&ei=SvtPafPBFrLn7_UP5a6P0Q8&start=90&sa=N&sstk=Af77f_fdUAEE0wgxKntJj0gJmi2nHMYD1K_Ihh0mutksAbWzts-6wUjaS_Zdxhpf-0A1-mDeg5CwaFRbXlHgcWoeU5HTooaS4Rh99A&ved=2ahUKEwjzjo7hit6RAxWy87sIHWXXI_oQ8tMDegQIDRAU"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=10",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=10",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=10",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=40",
+        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=50",
+        "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=60",
+        "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=70",
+        "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=80",
+        "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2&start=90"
+      }
+    }
+  }

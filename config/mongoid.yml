@@ -1,0 +1,30 @@
+development:
+  clients:
+    default:
+      uri: <%= ENV.fetch("MONGODB_URI", "mongodb://mongo:27017/new_soup_development") %>
+      options:
+        server_selection_timeout: 5
+  options:
+    use_activesupport_time_zone: true
+    belongs_to_required_by_default: true
+
+test:
+  clients:
+    default:
+      uri: <%= ENV.fetch("MONGODB_URI", "mongodb://mongo:27017/new_soup_test") %>
+      options:
+        server_selection_timeout: 5
+  options:
+    use_activesupport_time_zone: true
+    belongs_to_required_by_default: true
+
+production:
+  clients:
+    default:
+      uri: <%= ENV.fetch("MONGODB_URI", "mongodb://mongo:27017/new_soup_production") %>
+      options:
+        max_pool_size: 10
+        server_selection_timeout: 5
+  options:
+    use_activesupport_time_zone: true
+    belongs_to_required_by_default: true

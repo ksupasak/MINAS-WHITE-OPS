@@ -1,0 +1,442 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber"><%= @subject.name %></h1>
+  <div class="d-flex gap-2">
+    <%= link_to "Edit", edit_subject_path(@subject), class: "btn-cyber btn-secondary-cyber" %>
+    <%= button_to "Delete", subject_path(@subject), method: :delete, data: { confirm: "Delete this subject?" }, class: "btn-cyber btn-danger-cyber" %>
+  </div>
+</div>
+
+<div class="row">
+  <!-- Subject Details -->
+  <div class="col-lg-5 mb-4">
+    <div class="glass-card">
+      <div class="card-header-cyber">
+        <span class="header-icon">◉</span>
+        <h3>Subject Details</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="info-row">
+          <span class="info-label">Project</span>
+          <span class="info-value">
+            <% if @subject.project %>
+              <%= link_to @subject.project.name, @subject.project %>
+            <% else %>
+              <span class="text-muted">—</span>
+            <% end %>
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Query</span>
+          <span class="info-value"><code><%= @subject.query %></code></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Language</span>
+          <span class="info-value"><%= @subject.language || "—" %></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Country</span>
+          <span class="info-value"><%= @subject.country || "—" %></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Status</span>
+          <span class="info-value">
+            <span class="status-badge <%= @subject.active? ? 'active' : 'inactive' %>">
+              <%= @subject.active? ? "Active" : "Inactive" %>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Instant Feed Form -->
+  <div class="col-lg-7 mb-4">
+    <div class="glass-card">
+      <div class="card-header-cyber">
+        <span class="header-icon">◈</span>
+        <h3>Instant Feed</h3>
+      </div>
+      <div class="card-body-cyber">
+        <%= form_with url: instant_feed_subject_path(@subject), method: :post, local: true, class: "instant-feed-form" do |f| %>
+          
+          <!-- Query -->
+          <div class="form-group-cyber">
+            <%= f.label :query, "Search Query", class: "form-label-cyber" %>
+            <%= f.text_field :query, value: @subject.query, class: "form-input-cyber", placeholder: "Enter search query..." %>
+            <div class="form-hint-cyber">Default: <%= @subject.query %></div>
+          </div>
+
+          <!-- Channels -->
+          <div class="form-group-cyber">
+            <label class="form-label-cyber">Channels</label>
+            <div class="channel-grid">
+              <% [
+                { id: "web", name: "Web", icon: "◇", color: "#00f0ff" },
+                { id: "facebook", name: "Facebook", icon: "◈", color: "#1877f2" },
+                { id: "x", name: "X (Twitter)", icon: "✕", color: "#1da1f2" },
+                { id: "instagram", name: "Instagram", icon: "◎", color: "#e4405f" },
+                { id: "youtube", name: "YouTube", icon: "▶", color: "#ff0000" },
+                { id: "tiktok", name: "TikTok", icon: "♪", color: "#00f2ea" }
+              ].each do |channel| %>
+                <label class="channel-checkbox" style="--channel-color: <%= channel[:color] %>">
+                  <%= radio_button_tag :channel, channel[:id], channel[:id] == "web", id: "channel_#{channel[:id]}" %>
+                  <span class="channel-box">
+                    <span class="channel-icon"><%= channel[:icon] %></span>
+                    <span class="channel-name"><%= channel[:name] %></span>
+                    <span class="channel-check">✓</span>
+                  </span>
+                </label>
+              <% end %>
+            </div>
+          </div>
+
+          <!-- Region -->
+          <div class="form-group-cyber">
+            <%= f.label :region, "Region", class: "form-label-cyber" %>
+            <div class="region-grid">
+              <% [
+                { id: "th", name: "Thailand", flag: "🇹🇭" },
+                { id: "ae", name: "UAE", flag: "🇦🇪" },
+                { id: "us", name: "USA", flag: "🇺🇸" },
+                { id: "eu", name: "Europe", flag: "🇪🇺" },
+                { id: "cn", name: "China", flag: "🇨🇳" },
+                { id: "as", name: "Asia", flag: "🌏" }
+              ].each_with_index do |region, index| %>
+                <label class="region-radio">
+                  <%= radio_button_tag :region, region[:id], index == 0, id: "region_#{region[:id]}" %>
+                  <span class="region-box">
+                    <span class="region-flag"><%= region[:flag] %></span>
+                    <span class="region-name"><%= region[:name] %></span>
+                  </span>
+                </label>
+              <% end %>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="form-group-cyber">
+            <label class="form-label-cyber">Pagination</label>
+            <div class="pagination-inputs">
+              <div class="pagination-field">
+                <label for="start_index" class="pagination-label">Start Index</label>
+                <%= number_field_tag :start_index, 0, min: 0, step: 1, class: "pagination-input", id: "start_index" %>
+              </div>
+              <div class="pagination-arrow">→</div>
+              <div class="pagination-field">
+                <label for="stop_index" class="pagination-label">Stop Index</label>
+                <%= number_field_tag :stop_index, 1, min: 1, step: 1, class: "pagination-input", id: "stop_index" %>
+              </div>
+              <div class="pagination-info">
+                <span class="info-icon">ℹ</span>
+                <span class="info-text">Each page = 10 results</span>
+              </div>
+            </div>
+       
+          </div>
+
+          <!-- Submit -->
+          <div class="form-actions-cyber">
+            <%= f.submit "🚀 Run Instant Feed", class: "btn-cyber btn-primary-cyber btn-lg" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+code {
+  padding: 2px 8px;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--cyber-border);
+  border-radius: 4px;
+  color: var(--cyber-primary);
+  font-family: monospace;
+}
+
+.instant-feed-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Channel Grid */
+.channel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.channel-checkbox {
+  cursor: pointer;
+}
+
+.channel-checkbox input {
+  display: none;
+}
+
+.channel-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--cyber-border);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.channel-checkbox:hover .channel-box {
+  border-color: var(--channel-color);
+  background: rgba(0, 240, 255, 0.05);
+}
+
+.channel-checkbox input:checked + .channel-box {
+  border-color: var(--channel-color);
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.15), rgba(0, 240, 255, 0.05));
+  box-shadow: 0 0 20px color-mix(in srgb, var(--channel-color) 30%, transparent);
+}
+
+.channel-icon {
+  font-size: 24px;
+  color: var(--cyber-text-secondary);
+  transition: all 0.3s ease;
+}
+
+.channel-checkbox input:checked + .channel-box .channel-icon {
+  color: var(--channel-color);
+  text-shadow: 0 0 15px var(--channel-color);
+}
+
+.channel-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cyber-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.channel-checkbox input:checked + .channel-box .channel-name {
+  color: var(--cyber-text-primary);
+}
+
+.channel-check {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--channel-color);
+  border-radius: 50%;
+  font-size: 10px;
+  color: var(--cyber-bg-deep);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.channel-checkbox input:checked + .channel-box .channel-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Region Grid */
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.region-radio {
+  cursor: pointer;
+}
+
+.region-radio input {
+  display: none;
+}
+
+.region-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--cyber-border);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.region-radio:hover .region-box {
+  border-color: var(--cyber-primary);
+  background: rgba(0, 240, 255, 0.05);
+}
+
+.region-radio input:checked + .region-box {
+  border-color: var(--cyber-primary);
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.2), rgba(0, 240, 255, 0.05));
+  box-shadow: 0 0 15px var(--cyber-primary-glow);
+}
+
+.region-flag {
+  font-size: 24px;
+}
+
+.region-name {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--cyber-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.region-radio input:checked + .region-box .region-name {
+  color: var(--cyber-primary);
+}
+
+.btn-lg {
+  padding: 14px 32px !important;
+  font-size: 14px !important;
+}
+
+/* Pagination Styles */
+.pagination-inputs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pagination-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pagination-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--cyber-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pagination-input {
+  width: 120px;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--cyber-border);
+  border-radius: 10px;
+  color: var(--cyber-text-primary);
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.pagination-input:focus {
+  outline: none;
+  border-color: var(--cyber-primary);
+  box-shadow: 0 0 15px var(--cyber-primary-glow);
+}
+
+.pagination-input::-webkit-inner-spin-button,
+.pagination-input::-webkit-outer-spin-button {
+  opacity: 1;
+  height: 30px;
+}
+
+.pagination-arrow {
+  font-size: 24px;
+  color: var(--cyber-primary);
+  margin-top: 20px;
+}
+
+.pagination-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--cyber-border);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.info-icon {
+  color: var(--cyber-primary);
+  font-size: 14px;
+}
+
+.info-text {
+  font-size: 12px;
+  color: var(--cyber-text-secondary);
+}
+
+.pagination-presets {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.preset-btn {
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--cyber-border);
+  border-radius: 6px;
+  color: var(--cyber-text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.preset-btn:hover {
+  background: rgba(0, 240, 255, 0.1);
+  border-color: var(--cyber-primary);
+  color: var(--cyber-primary);
+}
+
+@media (max-width: 768px) {
+  .channel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .region-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .pagination-inputs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .pagination-field {
+    width: 100%;
+  }
+  
+  .pagination-input {
+    width: 100%;
+  }
+  
+  .pagination-arrow {
+    transform: rotate(90deg);
+    margin: 0;
+    text-align: center;
+  }
+}
+</style>
+
+<script>
+function setRange(start, stop) {
+  document.getElementById('start_index').value = start;
+  document.getElementById('stop_index').value = stop;
+}
+</script>

@@ -1,0 +1,88 @@
+<div id="<%= dom_id model %>" class="model-card">
+  <div class="model-header">
+    <span class="model-icon"><%= model.provider_icon %></span>
+    <div class="model-info">
+      <span class="model-title"><%= model.name %></span>
+      <span class="model-provider"><%= model.provider&.capitalize %></span>
+    </div>
+    <span class="status-badge <%= model.active? ? 'active' : 'inactive' %>">
+      <%= model.active? ? "Active" : "Inactive" %>
+    </span>
+  </div>
+  
+  <% if model.capabilities.present? %>
+    <div class="model-caps">
+      <% model.capabilities.each do |cap| %>
+        <span class="cap-tag"><%= cap %></span>
+      <% end %>
+    </div>
+  <% end %>
+  
+  <% if model.description.present? %>
+    <p class="model-desc"><%= model.description.truncate(100) %></p>
+  <% end %>
+</div>
+
+<style>
+.model-card {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--cyber-border);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.model-card:hover {
+  border-color: var(--cyber-primary);
+  box-shadow: 0 0 15px var(--cyber-primary-glow);
+}
+
+.model-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.model-icon {
+  font-size: 32px;
+}
+
+.model-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.model-title {
+  font-weight: 600;
+  color: var(--cyber-text-primary);
+}
+
+.model-provider {
+  font-size: 11px;
+  color: var(--cyber-text-muted);
+}
+
+.model-caps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.cap-tag {
+  padding: 2px 8px;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--cyber-border);
+  border-radius: 4px;
+  font-size: 10px;
+  color: var(--cyber-text-secondary);
+}
+
+.model-desc {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--cyber-text-muted);
+}
+</style>

@@ -1,0 +1,108 @@
+<%= form_with(model: feeder, class: "card shadow-sm") do |form| %>
+  <div class="card-body">
+    <% if feeder.errors.any? %>
+      <div class="alert alert-danger"><%= feeder.errors.full_messages.to_sentence %></div>
+    <% end %>
+
+    <% if current_user.super_admin? %>
+      <div class="mb-3">
+        <%= form.label :customer_id, "Customer", class: "form-label" %>
+        <%= form.collection_select :customer_id, Customer.all, :id, :name, {}, class: "form-select" %>
+      </div>
+    <% end %>
+
+    <div class="mb-3">
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :feeder_type_id, "Feeder Type", class: "form-label" %>
+      <%= form.collection_select :feeder_type_id, @feeder_types, :id, :name, {}, class: "form-select" %>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <%= form.label :status, class: "form-label" %>
+        <%= form.select :status, %w[idle running paused failed], {}, class: "form-select" %>
+      </div>
+      <div class="col-md-6 mb-3">
+        <%= form.label :schedule_cron, "Schedule (cron)", class: "form-label" %>
+        <%= form.text_field :schedule_cron, class: "form-control", placeholder: "*/15 * * * *" %>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :subject_ids, "Subjects", class: "form-label" %>
+      <%= select_tag "feeder[subject_ids][]", options_from_collection_for_select(@subjects, :id, :name, feeder.subject_ids), multiple: true, class: "form-select" %>
+      <small class="text-muted">Hold Ctrl/Cmd to select multiple subjects.</small>
+    </div>
+
+    <fieldset class="border p-3 rounded">
+      <legend class="fs-6">Credentials</legend>
+      <%= form.fields_for :feeder_config do |conf| %>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <%= conf.label :api_key, class: "form-label" %>
+            <%= conf.text_field :api_key, class: "form-control" %>
+          </div>
+          <div class="col-md-6 mb-3">
+            <%= conf.label :api_secret, class: "form-label" %>
+            <%= conf.text_field :api_secret, class: "form-control" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <%= conf.label :access_token, class: "form-label" %>
+            <%= conf.text_field :access_token, class: "form-control" %>
+          </div>
+          <div class="col-md-6 mb-3">
+            <%= conf.label :refresh_token, class: "form-label" %>
+            <%= conf.text_field :refresh_token, class: "form-control" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <%= conf.label :base_url, class: "form-label" %>
+            <%= conf.text_field :base_url, class: "form-control" %>
+          </div>
+          <div class="col-md-6 mb-3">
+            <%= conf.label :rate_limit_policy, class: "form-label" %>
+            <%= conf.text_field :rate_limit_policy, class: "form-control" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <%= conf.label :engine, class: "form-label" %>
+            <%= conf.text_field :engine, class: "form-control", placeholder: "google" %>
+          </div>
+          <div class="col-md-6 mb-3">
+            <%= conf.label :google_domain, class: "form-label" %>
+            <%= conf.text_field :google_domain, class: "form-control", placeholder: "google.com" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <%= conf.label :gl, "GL", class: "form-label" %>
+            <%= conf.text_field :gl, class: "form-control", placeholder: "us" %>
+          </div>
+          <div class="col-md-4 mb-3">
+            <%= conf.label :hl, "HL", class: "form-label" %>
+            <%= conf.text_field :hl, class: "form-control", placeholder: "en" %>
+          </div>
+          <div class="col-md-4 mb-3">
+            <%= conf.label :start, class: "form-label" %>
+            <%= conf.number_field :start, class: "form-control", min: 0 %>
+          </div>
+        </div>
+        <div class="mb-3">
+          <%= conf.label :extra, "Extra (JSON)", class: "form-label" %>
+          <%= conf.text_area :extra, class: "form-control", rows: 2, value: conf.object.extra.to_json %>
+        </div>
+      <% end %>
+    </fieldset>
+  </div>
+  <div class="card-footer text-end">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

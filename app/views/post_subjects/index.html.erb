@@ -1,0 +1,226 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber">Post Subjects</h1>
+  <div class="d-flex gap-2">
+    <%= button_to "Reset All", destroy_all_post_subjects_path, method: :delete, class: "btn-cyber btn-danger-cyber", data: { confirm: "Are you sure you want to delete ALL post subjects? This action cannot be undone." } %>
+    <%= link_to "New Post Subject", new_post_subject_path, class: "btn-cyber btn-primary-cyber" %>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="row mb-4">
+  <div class="col-md-3">
+    <div class="stat-card-cyber">
+      <div class="stat-icon positive">▲</div>
+      <div class="stat-content">
+        <div class="stat-value"><%= PostSubject.positive.count %></div>
+        <div class="stat-label">Positive</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="stat-card-cyber">
+      <div class="stat-icon negative">▼</div>
+      <div class="stat-content">
+        <div class="stat-value"><%= PostSubject.negative.count %></div>
+        <div class="stat-label">Negative</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="stat-card-cyber">
+      <div class="stat-icon neutral">◆</div>
+      <div class="stat-content">
+        <div class="stat-value"><%= PostSubject.neutral.count %></div>
+        <div class="stat-label">Neutral</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="stat-card-cyber">
+      <div class="stat-icon total">◈</div>
+      <div class="stat-content">
+        <div class="stat-value"><%= PostSubject.count %></div>
+        <div class="stat-label">Total</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="glass-card">
+  <div class="card-body-cyber p-0">
+    <table class="table-cyber">
+      <thead>
+        <tr>
+          <th>Post</th>
+          <th>Subject</th>
+          <th>Sentiment</th>
+          <th>Model Name</th>
+          <th>Total Duration</th>
+          <th>Confidence</th>
+          <th>Reasoning</th>
+          <th>Analyzed</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @post_subjects.each do |ps| %>
+          <tr>
+            <td>
+              <% if ps.post %>
+                <%= link_to ps.post.title&.truncate(30) || ps.post_id.to_s.truncate(12), ps.post %>
+              <% else %>
+                <%= ps.post_id.to_s.truncate(12) %>
+              <% end %>
+            </td>
+            <td>
+              <% if ps.subject %>
+                <%= link_to ps.subject.name, ps.subject %>
+              <% else %>
+                <%= ps.subject_id.to_s.truncate(12) %>
+              <% end %>
+            </td>
+            <td>
+              <span class="sentiment-badge <%= ps.sentiment_color %>">
+                <span class="sentiment-icon"><%= ps.sentiment_icon %></span>
+                <%= ps.sentiment&.capitalize || "—" %>
+              </span>
+            </td>
+            <td><%= ps.analayzed_model || "—" %></td>
+            <td><%= ps.total_duration || "—" %></td>
+            <td>
+              <% if ps.confidence %>
+                <div class="confidence-bar">
+                  <div class="confidence-fill" style="width: <%= ps.confidence * 100 %>%"></div>
+                  <span class="confidence-text"><%= (ps.confidence * 100).round(1) %>%</span>
+                </div>
+              <% else %>
+                —
+              <% end %>
+            </td>
+            <td><%= ps.reasoning || "—" %></td>
+            <td><%= ps.analyzed_at&.strftime("%Y-%m-%d %H:%M") || "—" %></td>
+            <td class="text-end">
+              <%= link_to "View", ps, class: "btn-cyber btn-secondary-cyber btn-sm" %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+.stat-card-cyber {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--cyber-border);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.stat-card-cyber:hover {
+  border-color: var(--cyber-primary);
+  box-shadow: 0 0 20px var(--cyber-primary-glow);
+}
+
+.stat-icon {
+  font-size: 28px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.stat-icon.positive { color: #00ff88; background: rgba(0, 255, 136, 0.15); }
+.stat-icon.negative { color: #ff4466; background: rgba(255, 68, 102, 0.15); }
+.stat-icon.neutral { color: #88aaff; background: rgba(136, 170, 255, 0.15); }
+.stat-icon.total { color: var(--cyber-primary); }
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cyber-text-primary);
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--cyber-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sentiment-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sentiment-badge.success {
+  background: rgba(0, 255, 136, 0.15);
+  color: #00ff88;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.sentiment-badge.danger {
+  background: rgba(255, 68, 102, 0.15);
+  color: #ff4466;
+  border: 1px solid rgba(255, 68, 102, 0.3);
+}
+
+.sentiment-badge.secondary {
+  background: rgba(136, 170, 255, 0.15);
+  color: #88aaff;
+  border: 1px solid rgba(136, 170, 255, 0.3);
+}
+
+.sentiment-badge.warning {
+  background: rgba(255, 200, 0, 0.15);
+  color: #ffc800;
+  border: 1px solid rgba(255, 200, 0, 0.3);
+}
+
+.sentiment-icon {
+  font-size: 14px;
+}
+
+.confidence-bar {
+  position: relative;
+  width: 80px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--cyber-primary), var(--cyber-accent));
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.confidence-text {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: var(--cyber-text-secondary);
+}
+</style>

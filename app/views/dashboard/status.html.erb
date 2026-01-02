@@ -1,0 +1,277 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber">System Status</h1>
+  <div class="d-flex gap-2">
+    <%= link_to "Refresh", status_path, class: "btn-cyber btn-primary-cyber" %>
+    <%= link_to "Dashboard", root_path, class: "btn-cyber btn-secondary-cyber" %>
+  </div>
+</div>
+
+<div class="row">
+  <!-- Redis -->
+  <div class="col-md-6 col-lg-3 mb-4">
+    <div class="glass-card h-100">
+      <div class="card-header-cyber">
+        <span class="header-icon status-icon <%= @redis_status[:connected] ? 'connected' : 'disconnected' %>">●</span>
+        <h3>Redis</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="status-indicator mb-3">
+          <span class="status-dot-lg <%= @redis_status[:connected] ? 'connected' : 'disconnected' %>"></span>
+          <span class="status-text-lg"><%= @redis_status[:connected] ? 'Connected' : 'Disconnected' %></span>
+        </div>
+        <div class="connection-details">
+          <div class="detail-row">
+            <span class="detail-label">Status</span>
+            <span class="detail-value"><%= @redis_status[:info] %></span>
+          </div>
+          <% if @redis_status[:version] %>
+            <div class="detail-row">
+              <span class="detail-label">Version</span>
+              <span class="detail-value"><%= @redis_status[:version] %></span>
+            </div>
+          <% end %>
+          <% if @redis_status[:uptime] %>
+            <div class="detail-row">
+              <span class="detail-label">Uptime</span>
+              <span class="detail-value"><%= @redis_status[:uptime] %></span>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MongoDB -->
+  <div class="col-md-6 col-lg-3 mb-4">
+    <div class="glass-card h-100">
+      <div class="card-header-cyber">
+        <span class="header-icon status-icon <%= @mongo_status[:connected] ? 'connected' : 'disconnected' %>">●</span>
+        <h3>MongoDB</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="status-indicator mb-3">
+          <span class="status-dot-lg <%= @mongo_status[:connected] ? 'connected' : 'disconnected' %>"></span>
+          <span class="status-text-lg"><%= @mongo_status[:connected] ? 'Connected' : 'Disconnected' %></span>
+        </div>
+        <div class="connection-details">
+          <div class="detail-row">
+            <span class="detail-label">Status</span>
+            <span class="detail-value"><%= @mongo_status[:info] %></span>
+          </div>
+          <% if @mongo_status[:database] %>
+            <div class="detail-row">
+              <span class="detail-label">Database</span>
+              <span class="detail-value"><%= @mongo_status[:database] %></span>
+            </div>
+          <% end %>
+          <% if @mongo_status[:databases] %>
+            <div class="detail-row">
+              <span class="detail-label">Available</span>
+              <span class="detail-value"><%= @mongo_status[:databases] %></span>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Neo4j -->
+  <div class="col-md-6 col-lg-3 mb-4">
+    <div class="glass-card h-100">
+      <div class="card-header-cyber">
+        <span class="header-icon status-icon <%= @neo4j_status[:connected] ? 'connected' : 'disconnected' %>">●</span>
+        <h3>Neo4j</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="status-indicator mb-3">
+          <span class="status-dot-lg <%= @neo4j_status[:connected] ? 'connected' : 'disconnected' %>"></span>
+          <span class="status-text-lg"><%= @neo4j_status[:connected] ? 'Connected' : 'Disconnected' %></span>
+        </div>
+        <div class="connection-details">
+          <div class="detail-row">
+            <span class="detail-label">Status</span>
+            <span class="detail-value"><%= @neo4j_status[:info] %></span>
+          </div>
+          <% if @neo4j_status[:version] %>
+            <div class="detail-row">
+              <span class="detail-label">Version</span>
+              <span class="detail-value"><%= @neo4j_status[:version] %></span>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TigerGraph -->
+  <div class="col-md-6 col-lg-3 mb-4">
+    <div class="glass-card h-100">
+      <div class="card-header-cyber">
+        <span class="header-icon status-icon <%= @tigergraph_status[:connected] ? 'connected' : 'disconnected' %>">●</span>
+        <h3>TigerGraph</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="status-indicator mb-3">
+          <span class="status-dot-lg <%= @tigergraph_status[:connected] ? 'connected' : 'disconnected' %>"></span>
+          <span class="status-text-lg"><%= @tigergraph_status[:connected] ? 'Connected' : 'Disconnected' %></span>
+        </div>
+        <div class="connection-details">
+          <div class="detail-row">
+            <span class="detail-label">Status</span>
+            <span class="detail-value"><%= @tigergraph_status[:info] %></span>
+          </div>
+          <% if @tigergraph_status[:graph] %>
+            <div class="detail-row">
+              <span class="detail-label">Graph</span>
+              <span class="detail-value"><%= @tigergraph_status[:graph] %></span>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AI Services Row -->
+<div class="row">
+  <!-- Ollama -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="glass-card h-100">
+      <div class="card-header-cyber">
+        <span class="header-icon status-icon <%= @ollama_status[:connected] ? 'connected' : 'disconnected' %>">●</span>
+        <h3>Ollama</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="status-indicator mb-3">
+          <span class="status-dot-lg <%= @ollama_status[:connected] ? 'connected' : 'disconnected' %>"></span>
+          <span class="status-text-lg"><%= @ollama_status[:connected] ? 'Connected' : 'Disconnected' %></span>
+        </div>
+        <div class="connection-details">
+          <div class="detail-row">
+            <span class="detail-label">Status</span>
+            <span class="detail-value"><%= @ollama_status[:info] %></span>
+          </div>
+          <% if @ollama_status[:version] %>
+            <div class="detail-row">
+              <span class="detail-label">Version</span>
+              <span class="detail-value"><%= @ollama_status[:version] %></span>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Open WebUI -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="glass-card h-100">
+      <div class="card-header-cyber">
+        <span class="header-icon status-icon <%= @webui_status[:connected] ? 'connected' : 'disconnected' %>">●</span>
+        <h3>Open WebUI</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="status-indicator mb-3">
+          <span class="status-dot-lg <%= @webui_status[:connected] ? 'connected' : 'disconnected' %>"></span>
+          <span class="status-text-lg"><%= @webui_status[:connected] ? 'Connected' : 'Disconnected' %></span>
+        </div>
+        <div class="connection-details">
+          <div class="detail-row">
+            <span class="detail-label">Status</span>
+            <span class="detail-value"><%= @webui_status[:info] %></span>
+          </div>
+          <% if @webui_status[:status] %>
+            <div class="detail-row">
+              <span class="detail-label">Health</span>
+              <span class="detail-value"><%= @webui_status[:status] %></span>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Qdrant -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="glass-card h-100">
+      <div class="card-header-cyber">
+        <span class="header-icon status-icon <%= @qdrant_status[:connected] ? 'connected' : 'disconnected' %>">●</span>
+        <h3>Qdrant</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="status-indicator mb-3">
+          <span class="status-dot-lg <%= @qdrant_status[:connected] ? 'connected' : 'disconnected' %>"></span>
+          <span class="status-text-lg"><%= @qdrant_status[:connected] ? 'Connected' : 'Disconnected' %></span>
+        </div>
+        <div class="connection-details">
+          <div class="detail-row">
+            <span class="detail-label">Status</span>
+            <span class="detail-value"><%= @qdrant_status[:info] %></span>
+          </div>
+          <% if @qdrant_status[:collections].present? %>
+            <div class="detail-row">
+              <span class="detail-label">Collections</span>
+              <span class="detail-value"><%= @qdrant_status[:collections] %></span>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Summary -->
+<div class="glass-card mt-4">
+  <div class="card-header-cyber">
+    <span class="header-icon">◈</span>
+    <h3>Environment Variables</h3>
+  </div>
+  <div class="card-body-cyber p-0">
+    <table class="table-cyber">
+      <thead>
+        <tr>
+          <th>Variable</th>
+          <th>Value</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>REDIS_URL</td>
+          <td><%= ENV.fetch("REDIS_URL", "redis://redis:6379/0") %></td>
+          <td><span class="status-badge <%= @redis_status[:connected] ? 'active' : 'failed' %>"><%= @redis_status[:connected] ? 'OK' : 'Error' %></span></td>
+        </tr>
+        <tr>
+          <td>MONGODB_URI</td>
+          <td><%= ENV.fetch("MONGODB_URI", "(default)") %></td>
+          <td><span class="status-badge <%= @mongo_status[:connected] ? 'active' : 'failed' %>"><%= @mongo_status[:connected] ? 'OK' : 'Error' %></span></td>
+        </tr>
+        <tr>
+          <td>NEO4J_URI</td>
+          <td><%= ENV.fetch("NEO4J_URI", "bolt://neo4j:7687") %></td>
+          <td><span class="status-badge <%= @neo4j_status[:connected] ? 'active' : 'failed' %>"><%= @neo4j_status[:connected] ? 'OK' : 'Error' %></span></td>
+        </tr>
+        <tr>
+          <td>TIGERGRAPH_HOST</td>
+          <td><%= ENV.fetch("TIGERGRAPH_HOST", "(not set)") %></td>
+          <td><span class="status-badge <%= @tigergraph_status[:connected] ? 'active' : 'failed' %>"><%= @tigergraph_status[:connected] ? 'OK' : 'Error' %></span></td>
+        </tr>
+        <tr>
+          <td>OLLAMA_HOST</td>
+          <td><%= ENV.fetch("OLLAMA_HOST", "http://ollama:11434") %></td>
+          <td><span class="status-badge <%= @ollama_status[:connected] ? 'active' : 'failed' %>"><%= @ollama_status[:connected] ? 'OK' : 'Error' %></span></td>
+        </tr>
+        <tr>
+          <td>WEBUI_HOST</td>
+          <td><%= ENV.fetch("WEBUI_HOST", "http://open-webui:8080") %></td>
+          <td><span class="status-badge <%= @webui_status[:connected] ? 'active' : 'failed' %>"><%= @webui_status[:connected] ? 'OK' : 'Error' %></span></td>
+        </tr>
+        <tr>
+          <td>QDRANT_HOST</td>
+          <td><%= ENV.fetch("QDRANT_HOST", "http://qdrant:6333") %></td>
+          <td><span class="status-badge <%= @qdrant_status[:connected] ? 'active' : 'failed' %>"><%= @qdrant_status[:connected] ? 'OK' : 'Error' %></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3"><%= @feeder.name %></h1>
+  <div>
+    <%= button_to "Run now", run_now_feeder_path(@feeder), method: :post, class: "btn btn-success me-2" %>
+    <%= button_to "Reprocess", reprocess_feeder_path(@feeder), method: :post, class: "btn btn-warning me-2" %>
+    <%= link_to "Edit", edit_feeder_path(@feeder), class: "btn btn-outline-primary" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card mb-3">
+      <div class="card-body">
+        <p><strong>Type:</strong> <%= @feeder.feeder_type.name %></p>
+        <p><strong>Status:</strong> <%= @feeder.status %></p>
+        <p><strong>Schedule:</strong> <%= @feeder.schedule_cron %></p>
+        <p><strong>Last run:</strong> <%= @feeder.last_run_at %></p>
+      </div>
+    </div>
+    <div class="card mb-3">
+      <div class="card-header">Subjects</div>
+      <div class="card-body">
+        <ul class="list-unstyled mb-0">
+          <% @feeder.subjects.each do |subj| %>
+            <li><%= subj.name %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card mb-3">
+      <div class="card-header">Configuration</div>
+      <div class="card-body">
+        <% if @feeder.feeder_config %>
+          <p><strong>Base URL:</strong> <%= @feeder.feeder_config.base_url %></p>
+          <p><strong>Rate limit:</strong> <%= @feeder.feeder_config.rate_limit_policy %></p>
+          <p><strong>Extra:</strong> <%= @feeder.feeder_config.extra.inspect %></p>
+        <% else %>
+          <p class="text-muted">No configuration stored.</p>
+        <% end %>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Recent Results</div>
+      <div class="card-body p-0">
+        <table class="table mb-0">
+          <thead><tr><th>Status</th><th>Posts</th><th>Finished</th></tr></thead>
+          <tbody>
+            <% @feeder.results.order_by(created_at: :desc).limit(5).each do |res| %>
+              <tr>
+                <td><%= link_to res.status, res %></td>
+                <td><%= res.posts_count %></td>
+                <td><%= res.finished_at&.strftime("%Y-%m-%d %H:%M") %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

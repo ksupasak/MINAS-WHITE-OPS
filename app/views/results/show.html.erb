@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1 class="h3">Result</h1>
+  <%= link_to "Back", results_path, class: "btn btn-outline-secondary" %>
+</div>
+
+<div class="card mb-3">
+  <div class="card-body">
+    <p><strong>Feeder:</strong> <%= @result.feeder.name %></p>
+    <p><strong>Status:</strong> <%= @result.status %></p>
+    <p><strong>Posts:</strong> <%= @result.posts_count %></p>
+    <p><strong>Users:</strong> <%= @result.users_count %></p>
+    <p><strong>Hashtags:</strong> <%= @result.hashtags_count %></p>
+    <p><strong>Started:</strong> <%= @result.started_at %></p>
+    <p><strong>Finished:</strong> <%= @result.finished_at %></p>
+    <p><strong>Channel:</strong> <%= @result.channel %></p>
+    <p><strong>Regional:</strong> <%= @result.regional %></p>
+    <p><strong>Neo4j Batch ID:</strong> <%= @result.neo4j_batch_id %></p>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="card-header">Subjects</div>
+  <div class="card-body">
+    <% @result.subjects.each do |subject| %>
+      <span class="badge text-bg-primary"><%= subject.name %></span>
+    <% end %>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">Errors</div>
+  <div class="card-body">
+    <% if @result.error_messages.present? %>
+      <ul>
+        <% @result.error_messages.each do |err| %>
+          <li><%= err %></li>
+        <% end %>
+      </ul>
+    <% else %>
+      <p class="text-muted mb-0">No errors reported.</p>
+    <% end %>
+  </div>
+</div>
+<%= link_to "Upsert", upsert_result_path(@result), class: "btn btn-primary" %>

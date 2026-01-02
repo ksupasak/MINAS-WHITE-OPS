@@ -1,0 +1,19 @@
+<%= form_with(model: channel, class: "glass-card") do |form| %>
+  <div class="card-body-cyber">
+    <% if channel.errors.any? %>
+      <div class="alert-cyber alert-danger-cyber mb-3">
+        <span class="alert-icon">⚠</span>
+        <span class="alert-text"><%= channel.errors.full_messages.to_sentence %></span>
+      </div>
+    <% end %>
+
+    <div class="form-group-cyber">
+      <%= form.label :name, class: "form-label-cyber" %>
+      <%= form.text_field :name, class: "form-input-cyber" %>
+    </div>
+  </div>
+  <div class="card-footer-cyber">
+    <%= link_to "Cancel", channels_path, class: "btn-cyber btn-secondary-cyber" %>
+    <%= form.submit class: "btn-cyber btn-primary-cyber" %>
+  </div>
+<% end %>

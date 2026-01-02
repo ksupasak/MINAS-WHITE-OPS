@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Social Monitor" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <!-- Google Fonts for Cyberpunk theme -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="cyber-body">
+    <!-- Animated Grid Background -->
+    <div class="cyber-grid-bg"></div>
+
+    <nav class="navbar-cyber">
+      <div class="navbar-container">
+        <a class="navbar-brand-cyber" href="<%= root_path %>">
+          <span class="brand-icon">◈</span>
+          <span class="brand-text">SOCIAL<span class="brand-accent">MONITOR</span></span>
+        </a>
+        <div class="navbar-info">
+          <% if current_user && Current.customer %>
+            <div class="tenant-badge">
+              <span class="tenant-icon">◆</span>
+              Tenant: <%= Current.customer.name %>
+            </div>
+          <% end %>
+        </div>
+        <div class="navbar-user">
+          <% if current_user %>
+            <button class="user-btn" type="button" data-bs-toggle="dropdown">
+              <div class="user-avatar"><%= current_user.email[0].upcase %></div>
+              <span class="user-email"><%= current_user.email %></span>
+              <span class="dropdown-arrow">▼</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-cyber">
+              <li><%= link_to "Edit profile", edit_user_registration_path, class: "dropdown-item-cyber" rescue nil %></li>
+              <li><div class="dropdown-divider-cyber"></div></li>
+              <li><%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "dropdown-item-cyber" %></li>
+            </ul>
+          <% end %>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-wrapper">
+      <% if current_user %>
+        <aside class="sidebar-cyber">
+          <nav class="sidebar-nav">
+            <%= link_to root_path, class: "nav-item-cyber #{'active' if controller_name == 'dashboard'}" do %>
+              <span class="nav-icon">◈</span>
+              <span class="nav-text">Dashboard</span>
+            <% end %>
+            <% if current_user.super_admin? %>
+              <%= link_to customers_path, class: "nav-item-cyber #{'active' if controller_name == 'customers'}" do %>
+                <span class="nav-icon">◇</span>
+                <span class="nav-text">Customers</span>
+              <% end %>
+            <% end %>
+            <%= link_to users_path, class: "nav-item-cyber #{'active' if controller_name == 'users'}" do %>
+              <span class="nav-icon">◎</span>
+              <span class="nav-text">Users</span>
+            <% end %>
+            <%= link_to projects_path, class: "nav-item-cyber #{'active' if controller_name == 'projects'}" do %>
+              <span class="nav-icon">◫</span>
+              <span class="nav-text">Projects</span>
+            <% end %>
+            <%= link_to subjects_path, class: "nav-item-cyber #{'active' if controller_name == 'subjects'}" do %>
+              <span class="nav-icon">◉</span>
+              <span class="nav-text">Subjects</span>
+            <% end %>
+            <%= link_to feeders_path, class: "nav-item-cyber #{'active' if controller_name == 'feeders'}" do %>
+              <span class="nav-icon">◈</span>
+              <span class="nav-text">Feeders</span>
+            <% end %>
+            <%= link_to results_path, class: "nav-item-cyber #{'active' if controller_name == 'results'}" do %>
+              <span class="nav-icon">◧</span>
+              <span class="nav-text">Results</span>
+            <% end %>
+            <%= link_to graph_path, class: "nav-item-cyber #{'active' if controller_name == 'graph'}" do %>
+              <span class="nav-icon">◬</span>
+              <span class="nav-text">Graph</span>
+            <% end %>
+            <%= link_to llm_path, class: "nav-item-cyber #{'active' if controller_name == 'llm'}" do %>
+              <span class="nav-icon">◈</span>
+              <span class="nav-text">AI Chat</span>
+            <% end %>
+            <%= link_to channels_path, class: "nav-item-cyber #{'active' if controller_name == 'channels'}" do %>
+              <span class="nav-icon">◇</span>
+              <span class="nav-text">Channels</span>
+            <% end %>
+            <%= link_to sources_path, class: "nav-item-cyber #{'active' if controller_name == 'sources'}" do %>
+              <span class="nav-icon">◎</span>
+              <span class="nav-text">Sources</span>
+            <% end %>
+            <%= link_to posts_path, class: "nav-item-cyber #{'active' if controller_name == 'posts'}" do %>
+              <span class="nav-icon">◧</span>
+              <span class="nav-text">Posts</span>
+            <% end %>
+            <%= link_to post_subjects_path, class: "nav-item-cyber #{'active' if controller_name == 'post_subjects'}" do %>
+              <span class="nav-icon">◆</span>
+              <span class="nav-text">Post Subjects</span>
+            <% end %>
+            <%= link_to status_path, class: "nav-item-cyber #{'active' if action_name == 'status'}" do %>
+              <span class="nav-icon">●</span>
+              <span class="nav-text">System Status</span>
+            <% end %>
+          </nav>
+          <div class="sidebar-footer">
+            <div class="role-indicator">
+              <span class="role-dot role-<%= current_user.role %>"></span>
+              <span class="role-text"><%= current_user.role.humanize %></span>
+            </div>
+          </div>
+        </aside>
+      <% end %>
+
+      <main class="<%= current_user ? 'main-content' : 'main-content-full' %>">
+        <div class="content-wrapper">
+          <% flash.each do |key, value| %>
+            <div class="alert-cyber <%= key == 'alert' ? 'alert-danger-cyber' : 'alert-success-cyber' %>">
+              <span class="alert-icon"><%= key == 'alert' ? '⚠' : '✓' %></span>
+              <span class="alert-text"><%= value %></span>
+              <button type="button" class="alert-close" onclick="this.parentElement.remove()">&times;</button>
+            </div>
+          <% end %>
+          <%= yield %>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<%= form_with(model: post, class: "glass-card") do |form| %>
+  <div class="card-body-cyber">
+    <% if post.errors.any? %>
+      <div class="alert-cyber alert-danger-cyber mb-3">
+        <span class="alert-icon">⚠</span>
+        <span class="alert-text"><%= post.errors.full_messages.to_sentence %></span>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :post_id, "Post ID", class: "form-label-cyber" %>
+          <%= form.text_field :post_id, class: "form-input-cyber" %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :channel, class: "form-label-cyber" %>
+          <%= form.text_field :channel, class: "form-input-cyber" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group-cyber">
+      <%= form.label :title, class: "form-label-cyber" %>
+      <%= form.text_field :title, class: "form-input-cyber" %>
+    </div>
+
+    <div class="form-group-cyber">
+      <%= form.label :text, "Content", class: "form-label-cyber" %>
+      <%= form.text_area :text, class: "form-input-cyber", rows: 5 %>
+    </div>
+
+    <div class="form-group-cyber">
+      <%= form.label :link, class: "form-label-cyber" %>
+      <%= form.text_field :link, class: "form-input-cyber" %>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :source, class: "form-label-cyber" %>
+          <%= form.text_field :source, class: "form-input-cyber" %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group-cyber">
+          <%= form.label :snippet, class: "form-label-cyber" %>
+          <%= form.text_field :snippet, class: "form-input-cyber" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer-cyber">
+    <%= link_to "Cancel", posts_path, class: "btn-cyber btn-secondary-cyber" %>
+    <%= form.submit class: "btn-cyber btn-primary-cyber" %>
+  </div>
+<% end %>

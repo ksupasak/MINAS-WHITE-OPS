@@ -1,0 +1,206 @@
+<div class="page-header-cyber">
+  <h1 class="page-title-cyber">Post Subject Details</h1>
+  <div class="d-flex gap-2">
+    <%= link_to "Edit", edit_post_subject_path(@post_subject), class: "btn-cyber btn-secondary-cyber" %>
+    <%= button_to "Delete", @post_subject, method: :delete, data: { confirm: "Delete this post subject?" }, class: "btn-cyber btn-danger-cyber" %>
+  </div>
+</div>
+
+<div class="row">
+  <!-- Main Info -->
+  <div class="col-lg-8 mb-4">
+    <div class="glass-card">
+      <div class="card-header-cyber">
+        <span class="header-icon">◈</span>
+        <h3>Analysis Details</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="sentiment-display">
+          <div class="sentiment-main <%= @post_subject.sentiment_color %>">
+            <span class="sentiment-big-icon"><%= @post_subject.sentiment_icon %></span>
+            <span class="sentiment-big-text"><%= @post_subject.sentiment&.capitalize || "Unknown" %></span>
+          </div>
+          <% if @post_subject.confidence %>
+            <div class="confidence-display">
+              <div class="confidence-circle" style="--confidence: <%= @post_subject.confidence * 100 %>%">
+                <span class="confidence-value"><%= (@post_subject.confidence * 100).round(1) %>%</span>
+              </div>
+              <span class="confidence-label">Confidence</span>
+            </div>
+          <% end %>
+        </div>
+
+        <% if @post_subject.note.present? %>
+          <div class="note-section mt-4">
+            <h5 class="section-title">Note</h5>
+            <p class="note-text"><%= @post_subject.note %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- Post Info -->
+    <% if @post_subject.post %>
+      <div class="glass-card mt-4">
+        <div class="card-header-cyber">
+          <span class="header-icon">◧</span>
+          <h3>Related Post</h3>
+        </div>
+        <div class="card-body-cyber">
+          <% post = @post_subject.post %>
+          <h5><%= post.title || post.text&.truncate(100) %></h5>
+          <p class="text-muted"><%= post.text&.truncate(300) %></p>
+          <div class="d-flex gap-2 mt-3">
+            <span class="status-badge"><%= post.channel %></span>
+            <span class="status-badge secondary"><%= post.source %></span>
+          </div>
+          <%= link_to "View Post →", post, class: "btn-cyber btn-secondary-cyber btn-sm mt-3" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- Metadata -->
+  <div class="col-lg-4 mb-4">
+    <div class="glass-card">
+      <div class="card-header-cyber">
+        <span class="header-icon">◎</span>
+        <h3>Metadata</h3>
+      </div>
+      <div class="card-body-cyber">
+        <div class="info-row">
+          <span class="info-label">Post ID</span>
+          <span class="info-value"><code><%= @post_subject.post_id %></code></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Subject ID</span>
+          <span class="info-value"><code><%= @post_subject.subject_id %></code></span>
+        </div>
+        <% if @post_subject.subject %>
+          <div class="info-row">
+            <span class="info-label">Subject</span>
+            <span class="info-value"><%= link_to @post_subject.subject.name, @post_subject.subject %></span>
+          </div>
+        <% end %>
+        <div class="info-row">
+          <span class="info-label">Model</span>
+          <span class="info-value"><%= @post_subject.model_id || "—" %></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Analyzed</span>
+          <span class="info-value"><%= @post_subject.analyzed_at&.strftime("%Y-%m-%d %H:%M") || "—" %></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Created</span>
+          <span class="info-value"><%= @post_subject.created_at&.strftime("%Y-%m-%d %H:%M") %></span>
+        </div>
+      </div>
+    </div>
+
+    <%= link_to "← Back to List", post_subjects_path, class: "btn-cyber btn-secondary-cyber w-100 mt-3" %>
+  </div>
+</div>
+
+<style>
+.sentiment-display {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.sentiment-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sentiment-big-icon {
+  font-size: 48px;
+}
+
+.sentiment-big-text {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sentiment-main.success { color: #00ff88; }
+.sentiment-main.danger { color: #ff4466; }
+.sentiment-main.secondary { color: #88aaff; }
+.sentiment-main.warning { color: #ffc800; }
+
+.confidence-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.confidence-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(var(--cyber-primary) var(--confidence), rgba(255,255,255,0.1) 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.confidence-circle::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--cyber-bg-dark);
+  border-radius: 50%;
+}
+
+.confidence-value {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--cyber-primary);
+}
+
+.confidence-label {
+  font-size: 11px;
+  color: var(--cyber-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--cyber-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.note-text {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 3px solid var(--cyber-primary);
+  border-radius: 0 8px 8px 0;
+  color: var(--cyber-text-secondary);
+}
+
+code {
+  padding: 2px 8px;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--cyber-border);
+  border-radius: 4px;
+  color: var(--cyber-primary);
+  font-family: monospace;
+  font-size: 11px;
+}
+</style>

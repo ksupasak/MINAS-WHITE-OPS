@@ -1,0 +1,129 @@
+<div id="<%= dom_id post_subject %>" class="post-subject-card">
+  <div class="ps-header">
+    <span class="sentiment-badge <%= post_subject.sentiment_color %>">
+      <span class="sentiment-icon"><%= post_subject.sentiment_icon %></span>
+      <%= post_subject.sentiment&.capitalize || "Unknown" %>
+    </span>
+    <% if post_subject.confidence %>
+      <span class="confidence-pill"><%= (post_subject.confidence * 100).round(1) %>%</span>
+    <% end %>
+  </div>
+  
+  <div class="ps-body">
+    <div class="ps-info">
+      <span class="ps-label">Post:</span>
+      <span class="ps-value"><%= post_subject.post_id.to_s.truncate(20) %></span>
+    </div>
+    <div class="ps-info">
+      <span class="ps-label">Subject:</span>
+      <span class="ps-value"><%= post_subject.subject_id.to_s.truncate(20) %></span>
+    </div>
+    <% if post_subject.model_id %>
+      <div class="ps-info">
+        <span class="ps-label">Model:</span>
+        <span class="ps-value"><%= post_subject.model_id %></span>
+      </div>
+    <% end %>
+  </div>
+  
+  <% if post_subject.note.present? %>
+    <div class="ps-note">
+      <%= post_subject.note.truncate(100) %>
+    </div>
+  <% end %>
+</div>
+
+<style>
+.post-subject-card {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--cyber-border);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.post-subject-card:hover {
+  border-color: var(--cyber-primary);
+  box-shadow: 0 0 15px var(--cyber-primary-glow);
+}
+
+.ps-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.sentiment-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sentiment-badge.success {
+  background: rgba(0, 255, 136, 0.15);
+  color: #00ff88;
+}
+
+.sentiment-badge.danger {
+  background: rgba(255, 68, 102, 0.15);
+  color: #ff4466;
+}
+
+.sentiment-badge.secondary {
+  background: rgba(136, 170, 255, 0.15);
+  color: #88aaff;
+}
+
+.sentiment-badge.warning {
+  background: rgba(255, 200, 0, 0.15);
+  color: #ffc800;
+}
+
+.confidence-pill {
+  font-size: 11px;
+  padding: 3px 8px;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--cyber-border);
+  border-radius: 10px;
+  color: var(--cyber-primary);
+}
+
+.ps-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ps-info {
+  display: flex;
+  gap: 6px;
+}
+
+.ps-label {
+  font-size: 11px;
+  color: var(--cyber-text-muted);
+}
+
+.ps-value {
+  font-size: 11px;
+  color: var(--cyber-text-secondary);
+  font-family: monospace;
+}
+
+.ps-note {
+  margin-top: 12px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 2px solid var(--cyber-primary);
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+  color: var(--cyber-text-secondary);
+}
+</style>
