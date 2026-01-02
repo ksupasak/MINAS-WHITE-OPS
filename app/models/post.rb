@@ -31,16 +31,19 @@ class Post
   field :result_id, type: BSON::ObjectId
   field :feeder_id, type: BSON::ObjectId
   field :project_id, type: BSON::ObjectId
-  field :customer_id, type: BSON::ObjectId
+  field :customer_id, type: BSON::ObjectId 
   field :regional, type: String
 
   field :sentiment_status, type: String
   field :index_status, type: String
 
-belongs_to :project, optional: true
-belongs_to :result, optional: true
-belongs_to :subject, optional: true
-belongs_to :customer, optional: true
+  belongs_to :feeder, optional: true
+  belongs_to :project, optional: true
+  belongs_to :result, optional: true
+  # belongs_to :subject, optional: true
+  belongs_to :customer, optional: true
+  # belongs_to :source, optional: true
+  # belongs_to :channel, optional: true
 
   def analyze_sentiment
 

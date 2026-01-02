@@ -4,7 +4,7 @@ require "json"
 module Ai
   class ChatService
     def initialize(model: nil, host: nil)
-      @model = model || ENV.fetch("OLLAMA_MODEL", "qwen3:4b")
+      @model = model || ENV.fetch("OLLAMA_MODEL", "qwen2.5:1.5b")
       @host = host || ENV.fetch("OLLAMA_HOST", "http://ollama:11434")
     end
 

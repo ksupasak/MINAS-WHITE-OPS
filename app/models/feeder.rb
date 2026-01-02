@@ -40,6 +40,11 @@ class Feeder
       client.close
   
       results = Result.where(feeder_id: id).all()
+
+      Post.destroy_all
+      Source.destroy_all
+      Channel.destroy_all
+      PostSubject.destroy_all
    
       results.each do |result|
       
@@ -73,6 +78,10 @@ class Feeder
               i[:channel_id] = channel.id
               i[:source_id] = source.id
               i[:ref_type] = "post"
+              puts "CREATING POST"
+              puts i.to_json
+
+              
               post = Post.create!(i)
               new_items << i
             end

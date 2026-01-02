@@ -3,7 +3,7 @@ require "json"
 
 module Ai
   class SentimentService
-    def initialize(model: ENV.fetch("OLLAMA_MODEL", "qwen3-embedding:4b"), host: ENV.fetch("OLLAMA_HOST", "http://localhost:11434"))
+    def initialize(model: ENV.fetch("OLLAMA_MODEL", "qwen2.5:1.5b"), host: ENV.fetch("OLLAMA_HOST", "http://localhost:11434"))
       @model = model
       @host = host
     end

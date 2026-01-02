@@ -51,6 +51,8 @@ module Feeders
       )
       
       items = adapter.process_result(result)
+      puts "DEBUG items: "
+      puts "items: #{items.inspect}"
       feeder.upsert_items(result, items) if items.present?
        
 

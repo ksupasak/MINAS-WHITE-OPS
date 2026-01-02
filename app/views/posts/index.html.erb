@@ -27,7 +27,7 @@
         <% @posts.each do |post| %>
           <tr>
             <td><%= link_to post.post_id&.truncate(15), post %></td>
-            <td><%= post.subject&.name || post.subject %></td>
+            <td><%= post.subject  %></td>
             <td><%= (post.title || post.text)&.truncate(50) %></td>
             <td><span class="status-badge"><%= post.channel %></span></td>
             <td><%= post.source&.truncate(20) %></td>

@@ -5,7 +5,7 @@ class PostAnalysisJob < ApplicationJob
     
     post = Post.find(post_id)
 
-    # post.analyze_sentiment
+    post.analyze_sentiment
     post.index_post
 
   rescue Mongoid::Errors::DocumentNotFound
